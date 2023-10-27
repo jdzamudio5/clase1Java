@@ -2,23 +2,36 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        String letra="";
-        letra="hola";
-        System.out.println(letra);
 
-        int numero;
-        numero=0;
-        System.out.println(numero);
-        float k;
-        boolean b;
-        char c;
-        k=5.5f;
-        System.out.println(k);
-        c='a';
-        System.out.println(c);
-        String k2=Float.toString(k);
-        String union=letra+" "+c+" "+k;
-        System.out.println(union);
+        int x,y,z, sum,res,mult=0;
+        float mod;
+        String dia,noche;
+
+        dia="lunes";
+        noche="si";
+
+        x=4;
+        y=12;
+        z=4;
+
+        sum=x+y+z;
+        System.out.println(sum);
+        res=x-y-z;
+        System.out.println(res);
+        mult=x*y*z;
+        System.out.println(mult);
+
+        mod= y%x;
+        System.out.println(mod);
+
+        boolean a,b,c,iguales;
+
+        a= x<y;
+        b= x==y;
+        c= (x-y)<z;
+        iguales= dia.equals(noche);
+
+        System.out.println(iguales);
     }
 
 }
