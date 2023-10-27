@@ -24,6 +24,18 @@ public class Main {
         }
 
 
+        String Estado,V,R,A;
+        Estado="amarillo";
+
+        if(Estado.equals("verde")){
+            System.out.println("Puede Cruzar la Calle");
+        } else if(Estado.equals("amarillo")){
+            System.out.println("Cruce la calle con Precaucion");
+        }else{
+            System.out.println("No Puede Cruzar la calle");
+        }
+
+
 
 
     }
