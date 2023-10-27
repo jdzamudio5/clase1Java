@@ -11,5 +11,9 @@ public class Main2 {
         String helloWord2="y voy muy bien";
         String espacio=" ";
         System.out.println(helloWord+espacio.concat(Integer.toString(entero)));
+
+
+
+
     }
 }
