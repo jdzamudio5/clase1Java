@@ -1,0 +1,11 @@
+
+Y
+java:S1854">Remove this useless assignment to local variable "helloWord2".(ì†“”üÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(Œ¸»í
+@	java:S106"+Replace this use of System.out by a logger.(Òâ˜Á
+@	java:S106"+Replace this use of System.out by a logger.(ºöˆ½
+Q	java:S125
+"<This block of commented-out lines of code should be removed.(…ÓŸŸ
+J
+java:S1481"/Remove this unused "helloWord2" local variable.(ì†“”üÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ÿã’¹ýÿÿÿÿ
