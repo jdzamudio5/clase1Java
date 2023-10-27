@@ -6,13 +6,13 @@ public class Main {
         String amarillo = new String("Amarillo");
         String verde = new String("Verde");
         String estado ="Verde";
-        if(rojo.equals(estado)){
+        if(rojo.equals(estado)) {
             System.out.println("Frenar inmediatamente");
         }
-        if(amarillo.equals(estado)){
+        else if(amarillo.equals(estado)){
             System.out.println("Reduzca la velocidad");
         }
-        if(verde.equals(estado)){
+        else {
             System.out.println("Aumente la velocidad");
         }
     }
