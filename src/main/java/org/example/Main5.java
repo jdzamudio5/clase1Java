@@ -7,7 +7,8 @@ public class Main5 {
         String amarillo="amarillo";
         String verde="verde";
         String semaforo="";
-        semaforo="amarillo";
+
+        semaforo="rojo";
 
         if(semaforo.equals(rojo))
         {
