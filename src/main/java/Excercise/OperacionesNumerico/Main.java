@@ -1,4 +1,4 @@
-package Excercise;
+package Excercise.OperacionesNumerico;
 
 public class Main {
 
