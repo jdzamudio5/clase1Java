@@ -21,11 +21,12 @@ public class Main {
         mod=y%x;
         System.out.println(mod);
 
-        boolean a,b,c,iguales;
+        boolean a,b,c,iguales, numiguales;
         a=x<y;
         b=x>y;
         c=(x-y)<z;
         iguales=dia.equals(noche); //Comparación de igual igual con String
+        numiguales=x==y; //Comparación de igual igual con números
 
         System.out.println(iguales);
 
