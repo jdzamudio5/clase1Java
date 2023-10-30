@@ -1,7 +1,7 @@
 package org.condicionales;
 
 
-public class Main {
+public class Main2 {
     public static void main(String[] args) {
         int edad=10;
 
