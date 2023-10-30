@@ -3,35 +3,32 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        int x,y,z, sum,res,mult=0;
-        float mod;
-        String dia,noche;
+        String letra="";
+        letra="Hola";
+        System.out.println(letra);
 
-        dia="lunes";
-        noche="si";
+        int x;
+        x=0;
+        System.out.println(x);
 
-        x=4;
-        y=12;
-        z=4;
+        float f;
+        f=5.5f;
+        System.out.println(f);
 
-        sum=x+y+z;
-        System.out.println(sum);
-        res=x-y-z;
-        System.out.println(res);
-        mult=x*y*z;
-        System.out.println(mult);
+        boolean b;
+        b=true;
+        System.out.println(b);
 
-        mod= y%x;
-        System.out.println(mod);
+        char c;
+        c='a';
+        System.out.println(c);
 
-        boolean a,b,c,iguales;
+        //Convertir un float a String
+        String f2=Float.toString(f);
 
-        a= x<y;
-        b= x==y;
-        c= (x-y)<z;
-        iguales= dia.equals(noche);
+        //Concatenar
+        String union=letra+" "+c+" "+f2;
+        System.out.println(union);
 
-        System.out.println(iguales);
     }
-
 }
