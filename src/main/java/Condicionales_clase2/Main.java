@@ -1,22 +1,22 @@
 package Condicionales_clase2;
 import javax.swing.JOptionPane;
+import java.util.Objects;
 public class Main {
 
     public static void main(String[] args) {
-        String Usuario = "Occidente";
-        String Clave = "Occidente*2023";
+        String usuarioCorrecto = "Occidente";
+        String claveCorrecta = "Occidente*2023";
 
+        String usuarioFront = JOptionPane.showInputDialog("Ingresa el Usuario: ");
 
-        String UsuarioFront=JOptionPane.showInputDialog("Ingresa el Usuario: ");
-
-        if (UsuarioFront.equals(Usuario)){
-            String ClaveFront=JOptionPane.showInputDialog("Ingresa la contraseña: ");
-            if (ClaveFront.equals(Clave)){
+        if (Objects.equals(usuarioFront, usuarioCorrecto)) {
+            String claveFront = JOptionPane.showInputDialog("Ingresa la contraseña: ");
+            if (Objects.equals(claveFront, claveCorrecta)) {
                 JOptionPane.showMessageDialog(null, "Bienvenido Al Sistema");
-            }else {
+            } else {
                 JOptionPane.showMessageDialog(null, "La contraseña no Coincide");
             }
-        }else {
+        } else {
             JOptionPane.showMessageDialog(null, "El Usuario No Existe en el Sistema");
         }
     }
