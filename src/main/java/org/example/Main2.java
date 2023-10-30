@@ -17,7 +17,7 @@ public class Main2 {
         int x=55;
         String espacio=" ";
 
-        System.out.println(HelloWolrd.concat(HelloWorld2));
         System.out.println(HelloWolrd+espacio.concat(Integer.toString(x)));
+
     }
 }
