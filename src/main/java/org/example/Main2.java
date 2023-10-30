@@ -1,15 +1,23 @@
 package org.example;
 
+import java.sql.SQLOutput;
+
 public class Main2 {
     public static void main(String[] args) {
-        String helloWord="Este es mi primer hola Mundo";
-        System.out.println(helloWord.length());
-        System.out.println(helloWord.toLowerCase());
-        System.out.println(helloWord.toUpperCase());
-        int entero=58;
-        //System.out.println(helloWord.indexOf("mi"));
-        String helloWord2="y voy muy bien";
+
+        String HelloWolrd="Este es mi primer Hola Mundo";
+
+        System.out.println(HelloWolrd.length());
+        System.out.println(HelloWolrd.toLowerCase());
+        System.out.println(HelloWolrd.toUpperCase());
+        //System.out.println(HelloWolrd.indexOf("mi")); //Sacar indice de dónde comienza la palabra
+        System.out.println(HelloWolrd.indexOf("mi"));
+
+        String HelloWorld2="Y voy muy bien";
+        int x=55;
         String espacio=" ";
-        System.out.println(helloWord+espacio.concat(Integer.toString(entero)));
+
+        System.out.println(HelloWolrd+espacio.concat(Integer.toString(x)));
+
     }
 }
