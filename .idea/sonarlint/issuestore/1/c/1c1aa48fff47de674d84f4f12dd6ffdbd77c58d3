@@ -1,0 +1,18 @@
+
+[
+java:S1659">Declare "y" and all following declarations on a separate line.(ãÆþé8–€ŠŽ·1
+@
+java:S1659"#Declare "noche" on a separate line.(º²8–€ŠŽ·1
+[
+java:S1659"">Declare "b" and all following declarations on a separate line.(Â‘¹ª8—€ŠŽ·1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(‚¨Ö§8˜€ŠŽ·1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¸šñÙüÿÿÿÿ8˜€ŠŽ·1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÓÝ×ðøÿÿÿÿ8˜€ŠŽ·1
+Z	java:S106 "9Replace this use of System.out or System.err by a logger.(…ƒûÃüÿÿÿÿ8˜€ŠŽ·1
+C
+java:S1481""&Remove this unused "a" local variable.(Â‘¹ª8š€ŠŽ·1
+C
+java:S1481""&Remove this unused "b" local variable.(Â‘¹ª8š€ŠŽ·1
+C
+java:S1481""&Remove this unused "c" local variable.(Â‘¹ª8š€ŠŽ·1
+Z	java:S106)"9Replace this use of System.out or System.err by a logger.(ä™ ©úÿÿÿÿ8š€ŠŽ·1
