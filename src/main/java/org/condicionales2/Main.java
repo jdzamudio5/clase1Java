@@ -1,6 +1,5 @@
 package org.condicionales2;
 
-import javax.sound.midi.Soundbank;
 import javax.swing.*;
 
 public class Main {
