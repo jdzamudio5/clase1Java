@@ -20,7 +20,7 @@ public class Array {
             suma=suma+enteros[i];
 
         }
-        System.out.println("la suma de los datos es: "+suma);
+        //System.out.println("la suma de los datos es: "+suma);
         JOptionPane.showMessageDialog(null,"la suma de los datos es: "+suma);
 
         double promedio=suma/enteros.length;
@@ -28,7 +28,7 @@ public class Array {
 
         int maximo=enteros[0];
         int min=enteros[0];
-        boolean primo=true;
+
         for (int i = 0; i < enteros.length; i++) {
             if (enteros[i]>maximo){
                 maximo=enteros[i];
@@ -40,8 +40,35 @@ public class Array {
 
         JOptionPane.showMessageDialog(null,"el máximo número es: "+maximo);
         JOptionPane.showMessageDialog(null,"el máximo número es: "+min);
+        for (int i = 0; i < enteros.length; i++) {
+            int cantidad = 0;
+            for (int j = 1; j <= enteros[i]; j++) {
+                if (enteros[i] % j == 0) {
+                    cantidad++;
+                }
+            }
+            if (cantidad == 2 || enteros[i] == 1) {
+                System.out.println(enteros[i] + " es primo");
+            } else {
+                System.out.println(enteros[i] + " no es primo");
+            }
+        }
+        for (int i = 0; i <enteros.length ; i++) {
+            int cantidad = 0;
+            for (int j = 1; j <=enteros.length ; j++) {
+                if (enteros[i]%j == 0) {
+                    cantidad++;
+                }
+            }
+            if (cantidad==2 || enteros[i]==1){
+                enteros[i]=0;
+            }
+        }
+        for (int i = 0; i <enteros.length ; i++) {
 
+            System.out.print(enteros[i]+" ");
 
+        }
     }
 
 }
