@@ -1,4 +1,4 @@
-package Ejercicios_Javier_Diaz.Ciclos.EjerciciosEv1;
+package Ejercicios_Javier_Diaz.Taller1_31oct;
 import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args) {

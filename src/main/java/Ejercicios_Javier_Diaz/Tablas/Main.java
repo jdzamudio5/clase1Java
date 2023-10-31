@@ -1,8 +1,7 @@
-package Ejercicios_Javier_Diaz.Ciclos;
+package Ejercicios_Javier_Diaz.Tablas;
 
 public class Main {
     public static void main(String[] args) {
-
         int longitud = 10;
 
         int[] numeros = {1, 2, 3, 4, 5, 6, 7, 8, 9};
