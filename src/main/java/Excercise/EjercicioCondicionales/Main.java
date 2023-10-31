@@ -25,6 +25,14 @@ public class Main {
             JOptionPane.showMessageDialog(null, "El nombre de usuario no existe");;}
 
 
+for (int i=0; i <=10; i++){
+     System.out.println(": "+(7*i));
+}
+
+
+
+
+
     }
 
 
