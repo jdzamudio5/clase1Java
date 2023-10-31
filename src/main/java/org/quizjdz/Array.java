@@ -35,11 +35,12 @@ public class Array {
             }
             if (enteros[i]<min){
                 min=enteros[i];
+                //System.out.println(min);
             }
         }
 
-        JOptionPane.showMessageDialog(null,"el máximo número es: "+maximo);
-        JOptionPane.showMessageDialog(null,"el máximo número es: "+min);
+        JOptionPane.showMessageDialog(null,"el maximo numero es: "+maximo);
+        JOptionPane.showMessageDialog(null,"el minimo numero es: "+min);
         for (int i = 0; i < enteros.length; i++) {
             int cantidad = 0;
             for (int j = 1; j <= enteros[i]; j++) {
@@ -47,9 +48,13 @@ public class Array {
                     cantidad++;
                 }
             }
+
             if (cantidad == 2 || enteros[i] == 1) {
+
                 System.out.println(enteros[i] + " es primo");
+                //JOptionPane.showMessageDialog(null,enteros[i] + " es primo");
             } else {
+                //JOptionPane.showMessageDialog(null,enteros[i] + " No es primo");
                 System.out.println(enteros[i] + " no es primo");
             }
         }
@@ -67,6 +72,7 @@ public class Array {
         for (int i = 0; i <enteros.length ; i++) {
 
             System.out.print(enteros[i]+" ");
+            //JOptionPane.showMessageDialog(null,enteros[i]+" ");
 
         }
     }
