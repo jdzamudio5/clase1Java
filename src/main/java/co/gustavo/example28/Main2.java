@@ -1,4 +1,4 @@
-package co.gustavo.example2;
+package co.gustavo.example28;
 
 public class Main2 {
     public static void main(String[] args) {

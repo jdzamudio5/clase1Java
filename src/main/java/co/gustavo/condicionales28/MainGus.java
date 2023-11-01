@@ -1,4 +1,4 @@
-package co.gustavo.condicionales2;
+package co.gustavo.condicionales28;
 import javax.swing.*;
 
 public class MainGus {

@@ -1,4 +1,4 @@
-package co.gustavo.Condicional;
+package co.gustavo.CondicionalGus8;
 
 public class Main {
 
