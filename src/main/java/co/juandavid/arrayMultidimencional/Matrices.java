@@ -1,4 +1,4 @@
-package co.juandavid;
+package co.juandavid.arrayMultidimencional;
 
 import java.util.Arrays;
 
