@@ -1,4 +1,4 @@
-package org.Quiz;
+package co.jorge.Quiz;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package org.Condicionales;
+package co.jorge.Condicionales;
 public class Main {
 
     public static void main(String[] args) {

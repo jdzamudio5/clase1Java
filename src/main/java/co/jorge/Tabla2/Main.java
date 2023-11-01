@@ -1,4 +1,4 @@
-package org.Tabla2;
+package co.jorge.Tabla2;
 
 public class Main {
     public static void main(String[] args) {

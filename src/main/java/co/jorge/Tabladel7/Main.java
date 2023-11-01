@@ -1,4 +1,4 @@
-package org.Tabladel7;
+package co.jorge.Tabladel7;
 
 public class Main {
     public static void main(String[] args) {

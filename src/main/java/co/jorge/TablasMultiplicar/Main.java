@@ -1,4 +1,4 @@
-package org.TablasMultiplicar;
+package co.jorge.TablasMultiplicar;
 public class Main {
     public static void main(String[] args) {
         int i=0;
