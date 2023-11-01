@@ -1,4 +1,4 @@
-package Condicionales_clase2;
+package co.Alejandra.Condicionales_clase2;
 import javax.swing.JOptionPane;
 import java.util.Objects;
 public class Main {

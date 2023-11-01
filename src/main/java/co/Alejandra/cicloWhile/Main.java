@@ -1,6 +1,4 @@
-package org.cicloWhile;
-
-import javax.swing.*;
+package co.Alejandra.cicloWhile;
 
 public class Main {
     public static void main(String[] args) {

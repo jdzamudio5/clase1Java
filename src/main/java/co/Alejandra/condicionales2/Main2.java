@@ -1,4 +1,4 @@
-package org.condicionales2;
+package co.Alejandra.condicionales2;
 
 import javax.swing.*;
 

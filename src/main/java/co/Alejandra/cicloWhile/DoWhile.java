@@ -1,4 +1,4 @@
-package org.cicloWhile;
+package co.Alejandra.cicloWhile;
 
 import javax.swing.*;
 

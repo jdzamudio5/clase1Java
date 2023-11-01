@@ -1,4 +1,4 @@
-package ArraysMultidimencionales;
+package co.Alejandra.ArraysMultidimencionales;
 
 import java.util.Arrays;
 

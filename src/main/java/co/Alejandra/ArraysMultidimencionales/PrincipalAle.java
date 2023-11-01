@@ -1,7 +1,7 @@
-package ArraysMultidimencionales;
+package co.Alejandra.ArraysMultidimencionales;
 
-import static ArraysMultidimencionales.Array_List.addData;
-import static ArraysMultidimencionales.Array_List.updateDate;
+import static co.Alejandra.ArraysMultidimencionales.Array_List.addData;
+import static co.Alejandra.ArraysMultidimencionales.Array_List.updateDate;
 
 public class PrincipalAle {
     public static void main(String[] args) {

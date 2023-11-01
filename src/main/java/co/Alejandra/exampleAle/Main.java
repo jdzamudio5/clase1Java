@@ -1,4 +1,4 @@
-package org.example;
+package co.Alejandra.exampleAle;
 
 public class Main {
     public static void main(String[] args) {

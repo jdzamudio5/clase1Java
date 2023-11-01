@@ -1,4 +1,4 @@
-package org.ciclosRepetitivos;
+package co.Alejandra.ciclosRepetitivos;
 
 import javax.swing.*;
 
