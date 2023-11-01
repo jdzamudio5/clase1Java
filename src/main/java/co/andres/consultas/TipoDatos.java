@@ -1,6 +1,6 @@
-package org.example;
+package co.andres.consultas;
 
-public class Main {
+public class TipoDatos {
     public static void main(String[] args) {
         String letra="";
         letra="Hola";

@@ -1,6 +1,6 @@
-package org.ejercicio;
+package co.andres.ejercicios;
 
-public class Main {
+public class Semaforo {
     public static void main(String[] args) {
         String luz="Verde";
 

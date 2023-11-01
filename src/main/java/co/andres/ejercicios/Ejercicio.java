@@ -1,4 +1,4 @@
-package org.exercise;
+package co.andres.ejercicios;
 /*
  * @(#) Main.java 11.0
  * Copyright 2023 SQA. Todos los derechos reservados.
@@ -8,7 +8,7 @@ package org.exercise;
  * @autor Rafael Chica
  * @Fecha: --o--
  */
-public class Main {
+public class Ejercicio {
     public static void main(String[] args) {
         int x,y,z, sum,res,mult=0;
         float mod;

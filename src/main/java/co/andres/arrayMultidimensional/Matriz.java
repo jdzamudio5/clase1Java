@@ -1,4 +1,4 @@
-package Multidimencional;
+package co.andres.arrayMultidimensional;
 
 import java.util.Arrays;
 

@@ -1,6 +1,6 @@
-package Consultas;
+package co.andres.consultas;
 
-public class Main {
+public class Consultas {
     public static void main(String[] args) {
         int contador = 10;
         while (contador < 5) {

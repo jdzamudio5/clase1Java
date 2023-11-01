@@ -1,6 +1,6 @@
-package QuizAndres;
+package co.andres.quices;
 
-public class Main {
+public class PrimerQuiz {
     public static void main(String[] args) {
         // Crea un array de enteros con los siguientes valores 5, 10, 3, 8, 15, 7, 2, 9, 1, 6
         int[] enteros = {5, 10, 3, 8, 15, 7, 2, 9, 1, 6};

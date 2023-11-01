@@ -1,8 +1,6 @@
-package org.example;
+package co.andres.ejercicios;
 
-import java.sql.SQLOutput;
-
-public class Main2 {
+public class HolaMundo {
     public static void main(String[] args) {
 
         String HelloWolrd="Este es mi primer Hola Mundo";

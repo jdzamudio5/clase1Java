@@ -1,6 +1,6 @@
-package org.exerciseAle;
+package co.andres.ejercicios;
 
-public class Main {
+public class Ejercicio2 {
     public static void main(String[] args) {
         int x,y,z, sum,res, mult=0;
         float mod;
