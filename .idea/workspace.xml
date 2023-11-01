@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4f85fb6-b10d-44b7-8436-f80bcb319abd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ArrayMultidimensional/Matrices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EjerciciosArray/Ciclos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EjerciciosArray/Ciclos.java" afterDir="false" />
-    </list>
+    <list default="true" id="b4f85fb6-b10d-44b7-8436-f80bcb319abd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +101,7 @@
       <workItem from="1698784519764" duration="864000" />
       <workItem from="1698785415235" duration="342000" />
       <workItem from="1698785922430" duration="3655000" />
-      <workItem from="1698847585658" duration="4720000" />
+      <workItem from="1698847585658" duration="5026000" />
     </task>
     <servers />
   </component>
