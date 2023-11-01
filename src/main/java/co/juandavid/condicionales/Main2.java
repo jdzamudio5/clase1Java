@@ -1,4 +1,4 @@
-package org.condicionales;
+package co.juandavid.condicionales;
 
 
 public class Main2 {

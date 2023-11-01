@@ -1,4 +1,4 @@
-package org.whilejdz;
+package co.juandavid.whilejdz;
 
 import javax.swing.*;
 

@@ -1,4 +1,4 @@
-package org.ifandifelse;
+package co.juandavid.ifandifelse;
 
 public class Main {
     public static void main(String[] args) {

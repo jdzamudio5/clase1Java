@@ -1,4 +1,4 @@
-package org.ifandifelse;
+package co.juandavid.ifandifelse;
 
 import javax.swing.*;
 

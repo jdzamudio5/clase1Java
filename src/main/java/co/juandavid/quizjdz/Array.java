@@ -1,4 +1,4 @@
-package org.quizjdz;
+package co.juandavid.quizjdz;
 
 import javax.swing.*;
 

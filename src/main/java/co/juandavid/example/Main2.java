@@ -1,6 +1,4 @@
-package org.example;
-
-import java.sql.SQLOutput;
+package co.juandavid.example;
 
 public class Main2 {
     public static void main(String[] args) {

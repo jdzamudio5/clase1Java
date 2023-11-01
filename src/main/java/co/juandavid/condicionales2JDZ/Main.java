@@ -1,4 +1,4 @@
-package org.condicionales2JDZ;
+package co.juandavid.condicionales2JDZ;
 
 import javax.swing.*;
 

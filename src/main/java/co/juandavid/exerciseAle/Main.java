@@ -1,4 +1,4 @@
-package org.exerciseAle;
+package co.juandavid.exerciseAle;
 
 public class Main {
     public static void main(String[] args) {

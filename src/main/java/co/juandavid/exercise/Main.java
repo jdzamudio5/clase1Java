@@ -1,4 +1,4 @@
-package org.exercise;
+package co.juandavid.exercise;
 /*
  * @(#) Matrices.java 11.0
  * Copyright 2023 SQA. Todos los derechos reservados.

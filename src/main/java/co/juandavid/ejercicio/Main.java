@@ -1,4 +1,4 @@
-package org.ejercicio;
+package co.juandavid.ejercicio;
 
 public class Main {
     public static void main(String[] args) {

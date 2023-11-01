@@ -1,4 +1,4 @@
-package org.condicionales2;
+package co.juandavid.condicionales2;
 import javax.swing.*;
 
 public class Main {

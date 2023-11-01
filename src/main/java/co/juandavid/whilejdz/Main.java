@@ -1,4 +1,4 @@
-package org.whilejdz;
+package co.juandavid.whilejdz;
 
 public class Main {
     public static void main(String[] args) {
