@@ -1,4 +1,4 @@
-package co.gustavo.condicionales;
+package co.gustavo.condicionalesGus;
 /*
  * @(#) Main.java 11.0
  * Copyright 2023 SQA. Todos los derechos reservados.
