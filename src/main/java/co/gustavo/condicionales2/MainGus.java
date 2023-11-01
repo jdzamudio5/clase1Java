@@ -1,7 +1,7 @@
 package co.gustavo.condicionales2;
 import javax.swing.*;
 
-public class Main {
+public class MainGus {
     public static void main(String[] args) {
 
         String user; //Occidente
