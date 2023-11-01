@@ -1,4 +1,4 @@
-package Ejercicios_Javier_Diaz.Tablas;
+package co_Javier_Diaz.Tablas;
 
 public class Main {
     public static void main(String[] args) {

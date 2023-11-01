@@ -1,4 +1,4 @@
-package Ejercicios_Javier_Diaz.Clases;
+package co_Javier_Diaz.Clases;
 
 public class ContarArray {
 }

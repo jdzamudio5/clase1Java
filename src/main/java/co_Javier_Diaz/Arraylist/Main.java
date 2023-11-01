@@ -1,4 +1,4 @@
-package Ejercicios_Javier_Diaz.Arraylist;
+package co_Javier_Diaz.Arraylist;
 
 import java.util.ArrayList;  // Agrega esta línea para importar la clase ArrayList
 

@@ -1,4 +1,4 @@
-package Ejercicios_Javier_Diaz.Condiccionales_clase2_ValidarUsuario;
+package co_Javier_Diaz.Condiccionales_clase2_ValidarUsuario;
 
 import javax.swing.*;
 import java.util.Objects;
