@@ -1,4 +1,4 @@
-package org.MiguelAcevedo.DoWhile;
+package org.co.MiguelAcevedo.DoWhile;
 
 public class Main {
     public static void main(String[] args) {

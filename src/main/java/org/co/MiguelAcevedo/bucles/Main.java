@@ -1,4 +1,4 @@
-package org.MiguelAcevedo.bucles;
+package org.co.MiguelAcevedo.bucles;
 
 public class Main {
     public static void main(String[] args) {
