@@ -38,6 +38,7 @@ public class QUIZ1 {
 
     }
 
+
     public static boolean esprimo(int numero) {
         if (numero < 2) {
             return false;
