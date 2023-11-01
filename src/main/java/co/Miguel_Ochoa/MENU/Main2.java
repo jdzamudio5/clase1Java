@@ -1,4 +1,4 @@
-package org.MENU;
+package co.Miguel_Ochoa.MENU;
 
 import javax.swing.*;
 

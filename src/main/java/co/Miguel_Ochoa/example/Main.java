@@ -1,4 +1,4 @@
-package org.example;
+package co.Miguel_Ochoa.example;
 
 public class Main {
     public static void main(String[] args) {

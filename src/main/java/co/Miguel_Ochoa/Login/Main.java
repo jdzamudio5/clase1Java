@@ -1,6 +1,4 @@
-package org.Login;
-import org.LOGIN_POO.Usuario;
-import org.LOGIN_POO.SistemaDeLogin;
+package co.Miguel_Ochoa.Login;
 
 import javax.swing.*;
 

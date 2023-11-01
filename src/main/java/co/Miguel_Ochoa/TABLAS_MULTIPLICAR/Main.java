@@ -1,4 +1,4 @@
-package org.TABLAS_MULTIPLICAR;
+package co.Miguel_Ochoa.TABLAS_MULTIPLICAR;
 import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args) {

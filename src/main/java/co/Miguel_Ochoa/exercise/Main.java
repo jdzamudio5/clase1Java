@@ -1,4 +1,4 @@
-package org.exercise;
+package co.Miguel_Ochoa.exercise;
 /*
  * @(#) Main.java 11.0
  * Copyright 2023 SQA. Todos los derechos reservados.

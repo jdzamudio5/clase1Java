@@ -1,4 +1,4 @@
-package org.LOGIN_POO;
+package co.Miguel_Ochoa.LOGIN_POO;
 
 public class Usuario {
     private String username;

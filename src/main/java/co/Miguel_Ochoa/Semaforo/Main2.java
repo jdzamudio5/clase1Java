@@ -1,13 +1,15 @@
-package org.Semaforo;
-
-public class Main {
+package co.Miguel_Ochoa.Semaforo;
+import java.util.Random;
+public class Main2 {
     public static void main(String[] args) {
         String[] colores = {"Rojo", "Amarillo", "Verde"};
         boolean carroDetenido = true; // El carro comienza detenido
+        Random random = new Random();
 
-
+        // Simulamos el cambio de color del semáforo
         for (int i = 0; i < 5; i++) { // Realizamos 10 cambios de color
-            String colorSemaforo = colores[i % colores.length];
+            int indiceAleatorio = random.nextInt(colores.length); // Genera un índice aleatorio
+            String colorSemaforo = colores[indiceAleatorio];
             System.out.println("El semáforo está en " + colorSemaforo);
 
             if (colorSemaforo.equals("Rojo")) {

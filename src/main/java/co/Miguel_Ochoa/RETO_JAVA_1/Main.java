@@ -1,4 +1,4 @@
-package org.RETO_JAVA_1;
+package co.Miguel_Ochoa.RETO_JAVA_1;
 
 public class Main {
     public static void main(String[] args) {
