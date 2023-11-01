@@ -1,4 +1,4 @@
-package Excercise.OperacionesNumerico;
+package co.gustavo.Numerico;
 
 public class Main {
 

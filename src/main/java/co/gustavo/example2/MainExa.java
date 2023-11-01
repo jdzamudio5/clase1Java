@@ -1,6 +1,6 @@
-package org.example;
+package co.gustavo.example2;
 
-public class Main {
+public class MainExa {
     public static void main(String[] args) {
         String letra="";
         letra="Hola";

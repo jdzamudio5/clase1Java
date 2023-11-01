@@ -1,4 +1,4 @@
-package org.condicionalesAle;
+package co.gustavo.condicionalesAle;
 
 public class Main {
     public static void main(String[] args) {

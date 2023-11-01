@@ -1,4 +1,4 @@
-package Excercise.EjercicioCondicionales;
+package co.gustavo.EjercicioCondicionales;
 
 import javax.swing.*;
 

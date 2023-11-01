@@ -1,4 +1,4 @@
-package Excercise.Condicional;
+package co.gustavo.Condicional;
 
 public class Main {
 
