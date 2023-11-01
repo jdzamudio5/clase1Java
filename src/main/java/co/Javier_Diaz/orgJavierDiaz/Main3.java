@@ -1,4 +1,6 @@
-package org.example;
+
+package co.Javier_Diaz.orgJavierDiaz;
+
 
 public class Main3 {
     public static void main(String[] args) {
