@@ -1,10 +1,5 @@
-<<<<<<<< HEAD:src/main/java/co/jorge/example/Main2.java
-package co.jorge.example;
-========
-package co.Javier_Diaz.orgJavierDiaz;
 
-import java.sql.SQLOutput;
->>>>>>>> f480100fe0edb5075d1b7a2286e90bbbc21ff376:src/main/java/co/Javier_Diaz/orgJavierDiaz/Main2.java
+package co.Javier_Diaz.orgJavierDiaz;
 
 public class Main2 {
     public static void main(String[] args) {

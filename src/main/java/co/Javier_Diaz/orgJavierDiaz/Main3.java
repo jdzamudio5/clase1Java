@@ -1,11 +1,8 @@
 
-package co.Javier_Diaz.orgJavierDiaz.condicionales2.exercise;
+package co.Javier_Diaz.orgJavierDiaz;
 
-/**
- * @autor Rafael Chica
- * @Fecha: --o--
- */
-public class Main {
+
+public class Main3 {
     public static void main(String[] args) {
         int x,y,z, sum,res,mult=0;
         float mod;
@@ -33,16 +30,8 @@ public class Main {
         a= x<y;
         b= x==y;
         c= (x-y)<z;
-        iguales= dia.equals(noche);
 
+        iguales=dia.equals(noche); //CON STRING UTILIZAR EQUALS PREFERIBLE
         System.out.println(iguales);
-
-
-
-
-
-
-
-
     }
 }

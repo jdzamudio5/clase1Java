@@ -1,15 +1,7 @@
-<<<<<<<< HEAD:src/main/java/co/Javier_Diaz/orgJavierDiaz/condicionales/Main.java
 package co.Javier_Diaz.orgJavierDiaz.condicionales;
-/*
- * @(#) Main.java 11.0
- * Copyright 2023 SQA. Todos los derechos reservados.
- */
-========
-package org.condicionales;
->>>>>>>> 637d63ab1dd3e36ef69defc48209edf8c2fcf295:src/main/java/co/Javier_Diaz/orgJavierDiaz/condicionales/Main2.java
 
 
-public class Main2 {
+public class Ppal {
     public static void main(String[] args) {
         int edad=10;
 

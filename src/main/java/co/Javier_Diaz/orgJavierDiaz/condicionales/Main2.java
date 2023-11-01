@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<<< HEAD:src/main/java/co/Javier_Diaz/orgJavierDiaz/condicionales/Main2.java
 <<<<<<<< HEAD:src/main/java/co/Javier_Diaz/orgJavierDiaz/condicionales/Main.java
 package co.Javier_Diaz.orgJavierDiaz.condicionales;
@@ -11,6 +12,10 @@ package org.condicionales;
 ========
 package co.juandavid.condicionales;
 >>>>>>>> d359635bc162ac16495aa8e1ef4c8daca9d9b52f:src/main/java/co/juandavid/condicionales/Main2.java
+=======
+
+package co.Javier_Diaz.orgJavierDiaz.condicionales;
+>>>>>>> 70ff61825c9a4fedbc34236a591d1007b236aa2e
 
 
 public class Main2 {

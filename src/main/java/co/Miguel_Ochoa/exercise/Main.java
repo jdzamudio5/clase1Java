@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/main/java/co/jorge/exercise/Main.java
 <<<<<<<< HEAD:src/main/java/co/jorge/exercise/Main.java
 <<<<<<<< HEAD:src/main/java/co/jorge/exercise/Main.java
 package co.jorge.exercise;
@@ -11,6 +12,11 @@ package co.juandavid.exercise;
  * @(#) Matrices.java 11.0
  * Copyright 2023 SQA. Todos los derechos reservados.
  */
+=======
+
+package co.Miguel_Ochoa.exercise;
+
+>>>>>>> 70ff61825c9a4fedbc34236a591d1007b236aa2e:src/main/java/co/Miguel_Ochoa/exercise/Main.java
 
 /**
  * @autor Rafael Chica
