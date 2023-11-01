@@ -1,6 +1,7 @@
 package co.Javier_Diaz.Clases;
 
 public class Principal {
+    /*
     // Crear una instancia de ArrayListHandler
     ArrayList array = new ArrayList();
 
@@ -20,5 +21,7 @@ public class Principal {
 
     // Imprimir la cantidad de elementos
         System.out.println("La cantidad de elementos en la lista es: " + cantidadElementos);
-}
+
+
+}*/
 }

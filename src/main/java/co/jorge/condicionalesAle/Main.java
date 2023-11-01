@@ -1,8 +1,5 @@
-<<<<<<<< HEAD:src/main/java/co/jorge/condicionalesAle/Main.java
+
 package co.jorge.condicionalesAle;
-========
-package co.Javier_Diaz.orgJavierDiaz.condicionalesAle;
->>>>>>>> f480100fe0edb5075d1b7a2286e90bbbc21ff376:src/main/java/co/Javier_Diaz/orgJavierDiaz/condicionalesAle/Main.java
 
 public class Main {
     public static void main(String[] args) {
