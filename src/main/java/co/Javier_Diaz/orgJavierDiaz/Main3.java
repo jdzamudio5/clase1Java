@@ -1,12 +1,6 @@
-<<<<<<<< HEAD:src/main/java/co/rafael/exercise/Main.java
-package co.rafael.exercise;
-/*
- * @(#) Main.java 11.0
- * Copyright 2023 SQA. Todos los derechos reservados.
- */
-========
-package org.example;
->>>>>>>> develop:src/main/java/co/Javier_Diaz/orgJavierDiaz/Main3.java
+
+package co.Javier_Diaz.orgJavierDiaz;
+
 
 public class Main3 {
     public static void main(String[] args) {
