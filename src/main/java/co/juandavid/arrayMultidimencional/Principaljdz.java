@@ -1,4 +1,4 @@
-package co.juandavid;
+package co.juandavid.arrayMultidimencional;
 
 public class Principaljdz {
     public static void main(String[] args) {
