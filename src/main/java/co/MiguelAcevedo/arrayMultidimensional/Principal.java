@@ -1,6 +1,6 @@
-package org.co.MiguelAcevedo.arrayMultidimensional;
+package co.MiguelAcevedo.arrayMultidimensional;
 
-import static org.co.MiguelAcevedo.arrayMultidimensional.ArrayListExample.*;
+import static co.MiguelAcevedo.arrayMultidimensional.ArrayListExample.*;
 
 public class Principal {
     public static void main(String[] args) {

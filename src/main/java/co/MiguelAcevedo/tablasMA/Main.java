@@ -1,4 +1,4 @@
-package org.co.MiguelAcevedo.tablasMA;
+package co.MiguelAcevedo.tablasMA;
 
 public class Main {
     public static void main(String[] args) {
