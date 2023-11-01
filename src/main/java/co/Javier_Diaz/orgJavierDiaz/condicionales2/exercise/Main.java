@@ -1,12 +1,8 @@
-<<<<<<<< HEAD:src/main/java/co/Miguel_Ochoa/exercise/Main.java
-package co.Miguel_Ochoa.exercise;
-========
 <<<<<<<< HEAD:src/main/java/co/jorge/exercise/Main.java
 package co.jorge.exercise;
 ========
 package co.Javier_Diaz.orgJavierDiaz.condicionales2.exercise;
 >>>>>>>> f480100fe0edb5075d1b7a2286e90bbbc21ff376:src/main/java/co/Javier_Diaz/orgJavierDiaz/condicionales2/exercise/Main.java
->>>>>>>> be8a5018910997fd4c11180dec7bd6c2f531ae81:src/main/java/co/jorge/exercise/Main.java
 /*
  * @(#) Matrices.java 11.0
  * Copyright 2023 SQA. Todos los derechos reservados.
