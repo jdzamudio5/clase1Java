@@ -11,7 +11,7 @@ public class Main {
         password= JOptionPane.showInputDialog("Ingrese su clave");
 
         if (user.equals("Occidente") && password.equals("Occidente*2023")){
-            System.out.println("Usuario logueado");
+            JOptionPane.showMessageDialog(null, "Usuario logueado");
         } else if ((user != "Occidente" && password.equals("Occidente*2023"))
                 || (user.equals("Occidente") &&  password != "Occidente*2023")
                 || (user != "Occidente" && password != "Occidente*2023")) {
