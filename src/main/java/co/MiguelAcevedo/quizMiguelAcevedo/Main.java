@@ -1,4 +1,4 @@
-package org.co.MiguelAcevedo.quizMiguelAcevedo;
+package co.MiguelAcevedo.quizMiguelAcevedo;
 
 import javax.swing.*;
 

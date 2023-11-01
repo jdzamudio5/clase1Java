@@ -1,4 +1,4 @@
-package org.co.MiguelAcevedo.DoWhile;
+package co.MiguelAcevedo.DoWhile;
 
 import javax.swing.*;
 

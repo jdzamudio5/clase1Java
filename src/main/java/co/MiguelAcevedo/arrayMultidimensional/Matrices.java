@@ -1,4 +1,4 @@
-package org.co.MiguelAcevedo.arrayMultidimensional;
+package co.MiguelAcevedo.arrayMultidimensional;
 
 import java.util.Arrays;
 

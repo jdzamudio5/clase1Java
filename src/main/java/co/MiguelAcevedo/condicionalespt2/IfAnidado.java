@@ -1,4 +1,4 @@
-package org.co.MiguelAcevedo.condicionalespt2;
+package co.MiguelAcevedo.condicionalespt2;
 
 import javax.swing.*;
 
