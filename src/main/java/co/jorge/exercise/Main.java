@@ -1,6 +1,6 @@
 package co.jorge.exercise;
 /*
- * @(#) Main.java 11.0
+ * @(#) Matrices.java 11.0
  * Copyright 2023 SQA. Todos los derechos reservados.
  */
 
