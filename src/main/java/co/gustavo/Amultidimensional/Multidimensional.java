@@ -1,7 +1,6 @@
-package Excercise.Amultidimensional;
+package co.gustavo.Amultidimensional;
 
 import javax.swing.*;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Multidimensional {

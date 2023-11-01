@@ -1,6 +1,6 @@
-package Excercise.Amultidimensional;
+package co.gustavo.Amultidimensional;
 
-import static Excercise.Amultidimensional.Arraylist.*;
+import static co.gustavo.Amultidimensional.Arraylist.*;
 
 public class Principal {
     public static void main(String[] args) {

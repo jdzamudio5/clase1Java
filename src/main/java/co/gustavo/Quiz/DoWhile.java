@@ -1,4 +1,4 @@
-package Excercise.Quiz;
+package co.gustavo.Quiz;
 
 import javax.swing.*;
 

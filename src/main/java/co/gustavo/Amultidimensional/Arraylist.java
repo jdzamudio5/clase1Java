@@ -1,4 +1,4 @@
-package Excercise.Amultidimensional;
+package co.gustavo.Amultidimensional;
 import java.util.ArrayList; // import the ArrayList class
 public class Arraylist {
 
