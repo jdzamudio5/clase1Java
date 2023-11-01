@@ -1,8 +1,9 @@
-package Condicionales_clase2;
-import javax.swing.JOptionPane;
-import java.util.Objects;
-public class Main {
+package co.Javier_Diaz.Condiccionales_clase2_ValidarUsuario;
 
+import javax.swing.*;
+import java.util.Objects;
+
+public class Main {
     public static void main(String[] args) {
         String usuarioCorrecto = "Occidente";
         String claveCorrecta = "Occidente*2023";

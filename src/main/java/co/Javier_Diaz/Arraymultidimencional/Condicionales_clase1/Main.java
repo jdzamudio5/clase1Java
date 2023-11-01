@@ -1,9 +1,7 @@
-package Condicional;
+package co.Javier_Diaz.Arraymultidimencional.Condicionales_clase1;
 
 public class Main {
-
     public static void main(String[] args) {
-
         int Estado=3;
         //1: Rojo 2:Amarillo 3: Verde
 
