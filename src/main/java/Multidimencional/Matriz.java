@@ -16,13 +16,16 @@ public class Matriz {
         int res = num2[1][2];
         int res2 = num2[1][2];
         int res3 = num2[1][2];
+        int suma =0;
 
         for (int i = 0; i < num2.length; i++) {
             for (int j = 0; j < num2[i].length; j++) {
+                suma +=num2[i][j];
                 System.out.println(num2[i][j]);
             }
             System.out.println("\n");
         }
+        System.out.println("La suma de los elementos de la matriz es: " + suma);
 
         for (int[] e : num2
         ) {
