@@ -1,7 +1,4 @@
-package ArrayMultidimensional;
-
-import java.lang.reflect.Array;
-import java.util.Arrays;
+package co.Lina.ArrayMultidimensional;
 
 public class Matrices {
 

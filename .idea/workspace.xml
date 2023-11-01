@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4f85fb6-b10d-44b7-8436-f80bcb319abd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ArrayMultidimensional/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/Lina/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ArrayMultidimensional/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ArrayMultidimensional/ArrayListExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ArrayMultidimensional/Matrices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ArrayMultidimensional/Matrices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ArrayMultidimensional/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ArrayMultidimensional/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "LGARZON",
-    "last_opened_file_path": "C:/Users/Desarrollo/CursoAutomatizacion/Colaborativo",
+    "last_opened_file_path": "C:/Users/Desarrollo/CursoAutomatizacion/Ejercicios/src/main/java/co/lina",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,10 +55,15 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Desarrollo\CursoAutomatizacion\Ejercicios\src\main\java\co\lina" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Principal">
     <configuration name="ArrayListExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArrayMultidimensional.ArrayListExample" />
@@ -133,11 +139,15 @@
       <workItem from="1698784519764" duration="864000" />
       <workItem from="1698785415235" duration="342000" />
       <workItem from="1698785922430" duration="3655000" />
-      <workItem from="1698847585658" duration="7280000" />
+      <workItem from="1698847585658" duration="9418000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,4 +1,4 @@
-package EjerciciosArray;
+package co.Lina.EjerciciosArray;
 
 public class EjemploArray {
 

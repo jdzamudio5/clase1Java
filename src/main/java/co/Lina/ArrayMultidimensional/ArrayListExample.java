@@ -1,4 +1,4 @@
-package ArrayMultidimensional;
+package co.Lina.ArrayMultidimensional;
 
 import java.util.ArrayList;
 

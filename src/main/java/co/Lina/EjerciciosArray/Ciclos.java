@@ -1,4 +1,4 @@
-package EjerciciosArray;
+package co.Lina.EjerciciosArray;
 
 public class Ciclos {
     public static void main(String[] args) {
