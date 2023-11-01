@@ -1,4 +1,4 @@
-package org.ArrayList;
+package co.jorge.ArrayList;
 
 import java.util.ArrayList;
 
