@@ -1,0 +1,21 @@
+
+<<<<<<< HEAD
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Œ¸»í
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Òâ˜Á
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ºöˆ½
+=======
+Y
+java:S1854">Remove this useless assignment to local variable "helloWord2".(ì†“”üÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(Œ¸»í
+@	java:S106"+Replace this use of System.out by a logger.(Òâ˜Á
+@	java:S106"+Replace this use of System.out by a logger.(ºöˆ½
+>>>>>>> 6f43f4ae6881e9989dd29f88cdbcf7ab881dca44
+Q	java:S125
+"<This block of commented-out lines of code should be removed.(…ÓŸŸ
+J
+java:S1481"/Remove this unused "helloWord2" local variable.(ì†“”üÿÿÿÿ
+<<<<<<< HEAD
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÿã’¹ýÿÿÿÿ
+=======
+E	java:S106"+Replace this use of System.out by a logger.(ÿã’¹ýÿÿÿÿ
+>>>>>>> 6f43f4ae6881e9989dd29f88cdbcf7ab881dca44
