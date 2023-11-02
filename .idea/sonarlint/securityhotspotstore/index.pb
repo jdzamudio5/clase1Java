@@ -103,8 +103,6 @@ V
 &src/main/java/co/rafael/IfAnidado.java,e\d\ed7ef7037d2670500976f72a77e82495cfd1bad7
 V
 &src/main/java/co/rafael/Principal.java,c\b\cb55d8706857c67fb324ddde138ee449f4322fa4
-<
-build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 s
 Csrc/main/java/co/Javier_Diaz/orgJavierDiaz/condicionales/Main2.java,c\8\c805241a638e03e4de18937d32f691a786e00d67
 r
