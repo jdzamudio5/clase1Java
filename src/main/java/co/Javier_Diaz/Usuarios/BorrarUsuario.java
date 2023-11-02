@@ -1,4 +1,4 @@
-package co_Javier_Diaz.Usuarios;
+package co.Javier_Diaz.Usuarios;
 
 import java.util.ArrayList;
 

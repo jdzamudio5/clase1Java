@@ -1,4 +1,4 @@
-package Ejercicios_Javier_Diaz.Condicionales_clase1;
+package co.Javier_Diaz.Condicionales_clase1;
 
 public class Main {
     public static void main(String[] args) {

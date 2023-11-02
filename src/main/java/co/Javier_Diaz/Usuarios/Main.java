@@ -1,9 +1,8 @@
-package co_Javier_Diaz.Usuarios;
+package co.Javier_Diaz.Usuarios;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import co_Javier_Diaz.Usuarios.BorrarUsuario;
 public class Main {
     private static ArrayList<Usuario> usuarios = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);

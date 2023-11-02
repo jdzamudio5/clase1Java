@@ -1,4 +1,4 @@
-package Ejercicios_Javier_Diaz.Arraymultidimencional;
+package co.Javier_Diaz.Arraymultidimencional;
 
 public class Ejercicio1 {
     public static void main(String[] args) {

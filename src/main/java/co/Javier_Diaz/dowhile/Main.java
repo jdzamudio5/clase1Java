@@ -1,4 +1,4 @@
-package Ejercicios_Javier_Diaz.dowhile;
+package co.Javier_Diaz.dowhile;
 
 import javax.swing.*;
 
