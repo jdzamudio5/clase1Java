@@ -1,12 +1,3 @@
-<<<<<<<< HEAD:src/main/java/co/andres/consultas/TipoDatos.java
-package co.andres.consultas;
-========
-<<<<<<<< HEAD:src/main/java/co/jorge/example/Main.java
-package co.jorge.example;
-========
-package co.Javier_Diaz.orgJavierDiaz;
->>>>>>>> f480100fe0edb5075d1b7a2286e90bbbc21ff376:src/main/java/co/Javier_Diaz/orgJavierDiaz/Main.java
->>>>>>>> develop:src/main/java/co/jorge/example/Main.java
 
 public class TipoDatos {
     public static void main(String[] args) {

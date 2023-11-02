@@ -1,12 +1,3 @@
-<<<<<<<< HEAD:src/main/java/co/andres/ejercicios/Ejercicio2.java
-package co.andres.ejercicios;
-========
-<<<<<<<< HEAD:src/main/java/co/jorge/exerciseAle/Main.java
-package co.jorge.exerciseAle;
-========
-package co.Javier_Diaz.orgJavierDiaz.exerciseAle;
->>>>>>>> f480100fe0edb5075d1b7a2286e90bbbc21ff376:src/main/java/co/Javier_Diaz/orgJavierDiaz/exerciseAle/Main.java
->>>>>>>> develop:src/main/java/co/jorge/exerciseAle/Main.java
 
 public class Ejercicio2 {
     public static void main(String[] args) {
