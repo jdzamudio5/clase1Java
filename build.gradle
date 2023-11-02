@@ -2,11 +2,7 @@ plugins {
     id 'java'
 }
 
-<<<<<<< HEAD
 group = 'co.Miguel_Ochoa.example'
-=======
-group = 'co.jorge.example'
->>>>>>> be8a5018910997fd4c11180dec7bd6c2f531ae81
 version = '1.0-SNAPSHOT'
 
 repositories {
