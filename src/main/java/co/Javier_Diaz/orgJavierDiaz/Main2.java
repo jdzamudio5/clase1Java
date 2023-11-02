@@ -1,5 +1,6 @@
-
 package co.Javier_Diaz.orgJavierDiaz;
+
+import java.sql.SQLOutput;
 
 public class Main2 {
     public static void main(String[] args) {

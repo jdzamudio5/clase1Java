@@ -1,0 +1,12 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÑæÜ8ò²óß¸1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëá¾îúÿÿÿÿ8ò²óß¸1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñªì„üÿÿÿÿ8ó²óß¸1
+U	java:S106	"9Replace this use of System.out or System.err by a logger.(ßÙ°‘8ü²óß¸1
+U	java:S106
+"9Replace this use of System.out or System.err by a logger.(Œ¢Íò8ü²óß¸1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(±äÀ8ü²óß¸1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(÷ƒÑ¶ÿÿÿÿÿ8ı²óß¸1
+R
+java:S1481"0Remove this unused "HelloWorld2" local variable.(ëá¾îúÿÿÿÿ8ş²óß¸1
+T	java:S106"9Replace this use of System.out or System.err by a logger.(øº‹r8ÿ²óß¸1

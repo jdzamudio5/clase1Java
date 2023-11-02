@@ -1,0 +1,15 @@
+
+l
+java:S1192"ODefine a constant instead of duplicating this literal "Occidente*2023" 4 times.(îúİ­8·ïïß¸1
+g
+java:S1192"JDefine a constant instead of duplicating this literal "Occidente" 4 times.(îúİ­8¸ïïß¸1
+Y
+java:S4973"<Strings and Boxed types should be compared using "equals()".(ô²‡Ğ8¸ïïß¸1
+X
+java:S4973"<Strings and Boxed types should be compared using "equals()".(¿±ŠA8¸ïïß¸1
+X
+java:S4973"<Strings and Boxed types should be compared using "equals()".(üßƒ48¸ïïß¸1
+X
+java:S4973"<Strings and Boxed types should be compared using "equals()".(üßƒ48¹ïïß¸1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(…ÆúÉ8¹ïïß¸1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ñ´ÕÄ8Åïïß¸1

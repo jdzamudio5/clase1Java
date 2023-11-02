@@ -1,5 +1,9 @@
-
 package co.Javier_Diaz.orgJavierDiaz.condicionales2.exercise;
+
+/*
+ * @(#) Matrices.java 11.0
+ * Copyright 2023 SQA. Todos los derechos reservados.
+ */
 
 /**
  * @autor Rafael Chica
