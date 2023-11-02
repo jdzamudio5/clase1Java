@@ -4,8 +4,11 @@ plugins {
 
 
 
-group = 'co.Miguel_Ochoa.example'
 
+
+
+
+group = 'co.rafael.example'
 
 version = '1.0-SNAPSHOT'
 
