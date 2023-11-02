@@ -1,4 +1,4 @@
-package co.Alejandro;
+package co.Alejandro.Array_List;
 import java.util.ArrayList;
 
 public class Array_List_Example {
@@ -22,10 +22,6 @@ public class Array_List_Example {
     public void getData1(){
         System.out.println(cars);
     }
-
-
-
-
 
 
 }
