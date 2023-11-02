@@ -3,21 +3,14 @@ plugins {
 }
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 group = 'co.jorge.example'
-=======
 
->>>>>>> juandavid
 group = 'co.juandavid.example'
-=======
-
 
 
 
 
 group = 'co.rafael.example'
->>>>>>> 8dd141e42026e9338fac03e88590554ef76a36a2
 
 version = '1.0-SNAPSHOT'
 
