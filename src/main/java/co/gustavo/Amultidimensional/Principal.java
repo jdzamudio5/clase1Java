@@ -12,7 +12,7 @@ public class Principal {
 
         Arraylist metodos= new Arraylist();
         metodos.getData2();
-
+// hola
 
     }
 }
