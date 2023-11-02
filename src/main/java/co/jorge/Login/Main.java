@@ -1,17 +1,18 @@
 package co.jorge.Login;
 
+import javax.swing.*;
 import java.util.ArrayList;
 
 public class Main {
-    /*ArrayList<String> usuarios = new ArrayList<String>();
-    ArrayList<String> claves = new ArrayList<String>();
-    usuarios.add("admin");
-    claves.add("admin");
     public static void main(String[] args) {
-        System.out.println(usuarios);
-        System.out.println(claves);
+
+        guardarUsuario("rchica","Occidente2023");
+
+        Login login=new Login();
+        String user= JOptionPane.showInputDialog("Ingrese el usuario");
+        String clave=JOptionPane.showInputDialog("Ingrese la clave");
+        login.validacionCredenciales(user,clave);
+
 
     }
-    */
-
 }
