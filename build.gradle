@@ -3,14 +3,9 @@ plugins {
 }
 
 
-<<<<<<< HEAD
-group = 'co.juandavid.example'
-=======
-group = 'co.jorge.example'
+
 group = 'co.juandavid.example'
 
-group = 'co.rafael.example'
->>>>>>> develop
 version = '1.0-SNAPSHOT'
 
 repositories {
