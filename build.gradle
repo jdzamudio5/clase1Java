@@ -3,7 +3,7 @@ plugins {
 }
 
 
-group = 'co.rafael.example'
+group = 'co.Miguel_Ochoa.example'
 
 version = '1.0-SNAPSHOT'
 
