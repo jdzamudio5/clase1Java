@@ -1,4 +1,4 @@
-package org.quiz1;
+package co.oscar.quiz1;
 import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args) {
