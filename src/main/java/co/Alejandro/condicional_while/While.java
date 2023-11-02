@@ -1,4 +1,4 @@
-package condicional_while;
+package co.Alejandro.condicional_while;
 
 public class While {
 

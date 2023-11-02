@@ -1,4 +1,4 @@
-package Condicional3;
+package co.Alejandro.Condicional3;
 
 public class Condicional3 {
     public static void main(String[] args) {

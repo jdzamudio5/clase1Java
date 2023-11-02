@@ -1,4 +1,4 @@
-package QUIZ;
+package co.Alejandro.QUIZ;
 import java.util.Arrays;
 
 public class QUIZ1 {
