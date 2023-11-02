@@ -1,0 +1,10 @@
+
+Z	java:S106	"9Replace this use of System.out or System.err by a logger.(ÇœğÑûÿÿÿÿ8™«ˆß¸1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(™¢Â¹8š«ˆß¸1
+H
+java:S1481"&Remove this unused "b" local variable.(ÖÔŒßúÿÿÿÿ8›«ˆß¸1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(æ–İ€ÿÿÿÿÿ8«ˆß¸1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Áß‡Ü8«ˆß¸1
+I
+java:S1481"'Remove this unused "k2" local variable.(”èê£şÿÿÿÿ8«ˆß¸1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(‡’Ïî8«ˆß¸1

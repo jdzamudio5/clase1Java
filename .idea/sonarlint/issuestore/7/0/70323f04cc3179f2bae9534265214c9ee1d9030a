@@ -1,0 +1,15 @@
+
+C
+java:S1481"(Remove this unused "num" local variable.(ïÀóÈùÿÿÿÿ
+D
+java:S1481")Remove this unused "num1" local variable.(éÜ‡øÿÿÿÿ
+>
+java:S1481"(Remove this unused "res" local variable.(Ùç¦£
+D
+java:S1481")Remove this unused "res2" local variable.(ŠÌé‚úÿÿÿÿ
+?
+java:S1481")Remove this unused "res3" local variable.(½Ö©ë
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ù¬¸¬
+M	java:S106"9Replace this use of System.out or System.err by a logger.(°•Þ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÆßÌ¿ûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(×—öÅ
