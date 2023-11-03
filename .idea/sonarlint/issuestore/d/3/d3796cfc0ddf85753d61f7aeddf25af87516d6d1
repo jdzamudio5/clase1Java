@@ -1,0 +1,21 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÇÊ¬ùÿÿÿÿÿ8½Ûğ‡¹1
+[
+java:S1659">Declare "y" and all following declarations on a separate line.(ãÆşé8ÈÛğ‡¹1
+@
+java:S1659"#Declare "noche" on a separate line.(º²8ÉÛğ‡¹1
+[
+java:S1659">Declare "b" and all following declarations on a separate line.(¬¿Ä¥8ËÛğ‡¹1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(‚¨Ö§8ÍÛğ‡¹1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¸šñÙüÿÿÿÿ8ÑÛğ‡¹1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Óİ×ğøÿÿÿÿ8ÓÛğ‡¹1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(…ƒûÃüÿÿÿÿ8ÕÛğ‡¹1
+C
+java:S1481"&Remove this unused "a" local variable.(¬¿Ä¥8ØÛğ‡¹1
+C
+java:S1481"&Remove this unused "b" local variable.(¬¿Ä¥8ÙÛğ‡¹1
+C
+java:S1481"&Remove this unused "c" local variable.(¬¿Ä¥8ÚÛğ‡¹1
+L
+java:S1481"/Remove this unused "numiguales" local variable.(¬¿Ä¥8ÜÛğ‡¹1
+Z	java:S106 "9Replace this use of System.out or System.err by a logger.(ä™ ©úÿÿÿÿ8ŞÛğ‡¹1

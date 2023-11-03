@@ -1,11 +1,0 @@
-
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÑæÜ8æÖøß¸1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëá¾îúÿÿÿÿ8çÖøß¸1
-U	java:S106	"9Replace this use of System.out or System.err by a logger.(ßÙ°‘8ğÖøß¸1
-U	java:S106
-"9Replace this use of System.out or System.err by a logger.(Œ¢Íò8ğÖøß¸1
-U	java:S106"9Replace this use of System.out or System.err by a logger.(±äÀ8ğÖøß¸1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(÷ƒÑ¶ÿÿÿÿÿ8ğÖøß¸1
-R
-java:S1481"0Remove this unused "HelloWorld2" local variable.(ëá¾îúÿÿÿÿ8ñÖøß¸1
-T	java:S106"9Replace this use of System.out or System.err by a logger.(øº‹r8ñÖøß¸1
