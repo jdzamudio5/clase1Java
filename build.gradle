@@ -3,16 +3,11 @@ plugins {
 }
 
 
-<<<<<<< HEAD
-
-
-
 
 
 group = 'co.rafael.example'
-=======
-group = 'co.Miguel_Ochoa.example'
->>>>>>> 0e7070a372d24b39eb41fa2fa7d929eeab43f437
+
+
 
 version = '1.0-SNAPSHOT'
 

@@ -23,8 +23,6 @@ Q
 !src/main/java/co/rafael/Main.java,1\6\16396369c1a875456ba3d6a1b3a9faafba12244b
 T
 $src/main/java/co/Alejandra/Main.java,7\8\782957b636012304d22ca10b32596bad8119570d
-<
-build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 i
 9src/main/java/co/Alejandra/Condicionales_clase2/Main.java,7\9\79d8a4770441046803c15a8feda4b831e26cbf50
 ]

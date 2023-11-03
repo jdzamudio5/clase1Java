@@ -22,8 +22,10 @@ public class Usuario {
     }
 
     public void setNombreCompleto(String nombreCompleto) {
+
         this.nombreCompleto = nombreCompleto;
     }
+
 
     public String getCedula() {
         return cedula;
