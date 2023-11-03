@@ -1,36 +1,64 @@
 package co.gustavo.LogIn;
 
+import javax.swing.*;
 import java.util.ArrayList;
+
+import static co.gustavo.LogIn.LogIn.verificarCredenciales;
 
 public class Registro {
 
-
+    boolean continuar = true;
     private static String user;
     private static String pssw;
-
-    static int opcion=0;
-    static String usuario;
-    static ArrayList<String> usuarios = new ArrayList<>();
-   /* public static void registro() {
+    static ArrayList<String[]> usuarios = new ArrayList<>();
 
 
-        JOptionPane.showMessageDialog(null,"Por favor elija una opcion "+"\n"+"1. Crear usuario"+"\n"+"2. Ingresar al sistema");
-        opcion = Integer.parseInt(JOptionPane.showInputDialog("Ingresa la Opcion: "));
+
+    public static void capturarUsuario(){
+
+        String[] usuario = new String[2];
+        user= JOptionPane.showInputDialog("Ingrese el Nombre de Usuario: \n" );
+        pssw= JOptionPane.showInputDialog("Ingrese la contrasena de Usuario: \n" );
+
+        usuario[0]=user;
+        usuario[1]=pssw;
+        usuarios.add(usuario);
+        JOptionPane.showMessageDialog(null, "El usuario ha sido registrado");
+
+    }// Fin
 
 
-        if (opcion==1) {
+    public static void listadoUsuarios(){
 
-            usuarios.add();
-        } else if (opcion==2) {
-
-            System.out.println("Bienvenido a soporte");
-        } else if (opcion==3) {
-
-            System.out.println("Bienvenido a Cancelacion");
+        for (int i = 0; i < usuarios.size(); i++) {
+            String[] usuarioPassw = usuarios.get(i);
+            String username = usuarioPassw[0];
+            String password = usuarioPassw[1];
+            System.out.println("Usuario: " + username + ", Contraseña: " + password);
         }
 
-    } // fin registro
-*/
+
+    }// Fin
+
+
+    public static void consulta(){
+
+
+        String user= JOptionPane.showInputDialog("Ingrese el usuario");
+        String clave= JOptionPane.showInputDialog("Ingrese la Clave");
+
+        if (verificarCredenciales(usuarios, user, clave)) {
+            JOptionPane.showMessageDialog(null, "Inicio de sesion exitoso usuario " + user + ".");
+
+        } else {
+            JOptionPane.showMessageDialog(null, "Nombre de usuario o contrasena incorrectos.");
+
+        }
+
+    }// Fin
+
+
+
 
     public static void guardarUsuario(String usuario, String clave){
 
