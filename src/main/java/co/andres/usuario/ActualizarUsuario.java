@@ -1,4 +1,4 @@
-package co.andres.ejercicios;
+package co.andres.usuario;
 
 public class ActualizarUsuario {
 }

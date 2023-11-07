@@ -1,8 +1,8 @@
-package co.andres.ejercicios;
+package co.andres.usuario;
 
 import javax.swing.*;
 
-import static co.andres.ejercicios.Registros.*;
+import static co.andres.usuario.Registros.*;
 
 public class Main {
     public static void main(String[] args) {
