@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import static co.jorge.Login.Agregar.nuevoUsuario;
 import static co.jorge.Login.Imprimir.imprimirUsuarios;
 import static co.jorge.Login.Eliminar.eliminarUsuario;
+import static co.jorge.Login.Menu.mostrarMenu;
 
 
 public class Main {
@@ -14,6 +15,7 @@ public class Main {
         ArrayList<String> usuarios = new ArrayList<String>();
         usuarios.add("admin"+"admin");
         int i=0;
+        boolean salir=false;
         do {
             String user = JOptionPane.showInputDialog("Ingrese el usuario administrador");
             String clave = JOptionPane.showInputDialog("Ingrese la clave del administrador");
@@ -25,35 +27,10 @@ public class Main {
             }
         }while(i==0);
         if(i==1){
-            String[] opciones = {"Agregar", "Eliminar","Imprimir", "Salir"};
-            int seleccion = JOptionPane.showOptionDialog(
-                    null,
-                    "Selecciona una opcion",
-                    "Opciones",
-                    JOptionPane.DEFAULT_OPTION,
-                    JOptionPane.PLAIN_MESSAGE,
-                    null,
-                    opciones,
-                    opciones[0]
-            );
-            if (seleccion == 0) {
-                // Opción Agregar seleccionada
-                System.out.println("Agregar");
-                nuevoUsuario(usuarios);
-
-            } else if (seleccion == 1) {
-                // Opción Eliminar seleccionada
-                System.out.println("Eliminar");
-                eliminarUsuario(usuarios);
-            } else if (seleccion == 2) {
-                // Opción imprimir seleccionada
-                imprimirUsuarios(usuarios);
-                //imprimirContenido(usuario);
-
-            } else if (seleccion == 3) {
-                // Opción Salir seleccionada
-                System.out.println("Hasta Luego!!!");
-            }
+            do {
+                mostrarMenu(usuarios, salir);
+                System.out.println("resultado:"+usuarios+salir+i);
+            }while(salir=false);
         }
     }
 }
