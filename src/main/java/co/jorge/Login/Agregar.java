@@ -8,6 +8,5 @@ public class Agregar {
         String user = JOptionPane.showInputDialog("Ingrese el nuevo usuario");
         String clave = JOptionPane.showInputDialog("Ingrese la clave del nuevo usuario");
         usuarios.add(user+clave);
-        System.out.println(usuarios);
     }
 }

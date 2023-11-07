@@ -5,6 +5,9 @@ import javax.swing.*;
 import java.util.ArrayList;
 
 import static co.jorge.Login.Agregar.nuevoUsuario;
+import static co.jorge.Login.Imprimir.imprimirUsuarios;
+import static co.jorge.Login.Eliminar.eliminarUsuario;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -41,9 +44,10 @@ public class Main {
             } else if (seleccion == 1) {
                 // Opción Eliminar seleccionada
                 System.out.println("Eliminar");
+                eliminarUsuario(usuarios);
             } else if (seleccion == 2) {
                 // Opción imprimir seleccionada
-                System.out.println("Imprimir");
+                imprimirUsuarios(usuarios);
                 //imprimirContenido(usuario);
 
             } else if (seleccion == 3) {
