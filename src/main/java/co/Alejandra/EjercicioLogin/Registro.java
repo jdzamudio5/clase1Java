@@ -1,13 +1,20 @@
 package co.Alejandra.EjercicioLogin;
 
+import javax.swing.*;
+
+import java.util.ArrayList;
+
 public class Registro {
     private static String user;
     private static String passw;
+
+
 
     //Metodo para guardar usuario
     public static void saveUser (String usuario, String clave){ //void se utiliza cuando no retorna nada
         user=usuario;
         passw=clave;
+
     }
 
     //En el Constructor se inicailizan las variables y se usa el this para inicializarlas
