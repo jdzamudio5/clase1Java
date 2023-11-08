@@ -1,6 +1,7 @@
 package Examen;
 
-public class Cuenta extends Banco{
+public class Cuenta {
+    int cuenta;
     String tipo;
     String fechaApertura;
     int saldo;
@@ -45,6 +46,14 @@ public class Cuenta extends Banco{
     }
 
     public void setCedulaCliente(int cedulaCliente) {
+        this.cedulaCliente = cedulaCliente;
+    }
+
+    public Cuenta(int cuenta, String tipo, String fechaApertura, int saldo, int cedulaCliente) {
+        this.cuenta = cuenta;
+        this.tipo = tipo;
+        this.fechaApertura = fechaApertura;
+        this.saldo = saldo;
         this.cedulaCliente = cedulaCliente;
     }
 }
