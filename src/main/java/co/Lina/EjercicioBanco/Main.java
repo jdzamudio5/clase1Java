@@ -19,11 +19,11 @@ public class Main {
 
         //crearCuenta();
         //consultarDatos();
-        Persona usuario = new Persona("Lina","Garzon",1010);
+        //Persona usuario = new Persona("Lina","Garzon",1010);
         //usuario.mostrarDatos(1010);
-        consultarDatos();
+        //consultarDatos();
 
-       // menu();
+        menu();
     }
 
     public static void menu(){
