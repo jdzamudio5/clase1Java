@@ -15,6 +15,6 @@ public class Main {
         Login login=new Login(); //ESTANCIA DE LA CLASE
         String user= JOptionPane.showInputDialog("Ingrese el usuario");
         String clave= JOptionPane.showInputDialog("Ingrese la clave");
-        login.validacionCredenciales(user,clave);
+        login.validacionCredenciales(user,clave); // invocar metodo
     }
 }
