@@ -41,8 +41,8 @@ public class Operacion {
 
     public void mostrarResultados(){
         System.out.println("La suma es: " + suma);
-        System.out.println("La suma es: " + resta);
-        System.out.println("La suma es: " + multiplicacion);
-        System.out.println("La suma es: " + division);
+        System.out.println("La resta es: " + resta);
+        System.out.println("La multiplicación es: " + multiplicacion);
+        System.out.println("La división es: " + division);
     }
 }
