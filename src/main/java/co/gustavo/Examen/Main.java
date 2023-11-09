@@ -4,7 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Menu menu = new Menu();
+        menu.mostrarMenu();
 
+
+    }
+}
+
+
+
+/*
         Persona persona1 = new Persona("Juan","NIT", 80736817, 25);
         Usuario usuario = new Usuario("Juan", "NIT", 102522152, 32,7432545,"Juan@gmail.com");
 
@@ -31,7 +40,7 @@ public class Main {
 
         // Crear cuentas y agregar al banco
         Cliente cliente1 = new Cliente("María", "CC", 1001546546, 21,1,80755655);
-        //Usuario cliente2 = new Usuario("Juan", "NIT", 102522152, 32,7432545,"Juan@gmail.com");
+       Usuario cliente2 = new Usuario("Juan", "NIT", 102522152, 32,7432545,"Juan@gmail.com");
 
         Cuenta cuenta1 = new Cuenta("001", 50001.0, cliente1);
         //Cuenta cuenta2 = new Cuenta("002", 2000.0, cliente2);
@@ -40,7 +49,7 @@ public class Main {
         //Banco.abrirCuenta(cuenta2);
 
         // Listar cuentas
-        Banco.listarCuentas();
+        Banco.mostrarCuentas();
 
         // Buscar una cuenta
         Cuenta cuentaEncontrada = Banco.buscarCuenta("001");
@@ -49,10 +58,6 @@ public class Main {
         }
 
 
-
-
-
-
-
-    }
-}
+        Banco.deposito(10000, cliente1);
+        //Banco.retiro(5000, titular);
+*/
