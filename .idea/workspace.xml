@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4f85fb6-b10d-44b7-8436-f80bcb319abd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/Lina/CuentaBanco/Banco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/Lina/CuentaBanco/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/Lina/CuentaBanco/Cuenta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/Lina/CuentaBanco/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/Lina/CuentaBanco/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/Lina/CuentaBanco/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/Lina/EjercicioBanco/Banco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/Lina/EjercicioBanco/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/Lina/EjercicioBanco/Cuenta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/Lina/EjercicioBanco/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/Lina/EjercicioBanco/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/Lina/EjercicioBanco/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b4f85fb6-b10d-44b7-8436-f80bcb319abd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +113,7 @@
       <workItem from="1699023661153" duration="585000" />
       <workItem from="1699364622547" duration="377000" />
       <workItem from="1699402118214" duration="1010000" />
-      <workItem from="1699455974912" duration="30835000" />
+      <workItem from="1699455974912" duration="31454000" />
     </task>
     <servers />
   </component>
