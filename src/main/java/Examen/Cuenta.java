@@ -1,16 +1,13 @@
 package Examen;
+import java.util.Random;
 
-public class Cuenta {
-    int cuenta;
-    String tipo;
-    String fechaApertura;
-    int saldo;
-    int cedulaCliente;
-    public static void crearCuenta(){
-
-    }
+public class Cuenta extends Banco{
+    private int cuenta;
+    private String tipo;
+    private String fechaApertura;
+    private int saldo;
+    private int cedulaCliente;
     public static void consultarSaldo(){
-
     }
     public static void retirarDinero(){
 
@@ -49,8 +46,9 @@ public class Cuenta {
         this.cedulaCliente = cedulaCliente;
     }
 
-    public Cuenta(int cuenta, String tipo, String fechaApertura, int saldo, int cedulaCliente) {
-        this.cuenta = cuenta;
+    public Cuenta(String nombre, String direccion, int telefono, String correoInstitucional, Cuenta cuenta, int cuenta1, String tipo, String fechaApertura, int saldo, int cedulaCliente) {
+        super(nombre, direccion, telefono, correoInstitucional, cuenta);
+        this.cuenta = cuenta1;
         this.tipo = tipo;
         this.fechaApertura = fechaApertura;
         this.saldo = saldo;

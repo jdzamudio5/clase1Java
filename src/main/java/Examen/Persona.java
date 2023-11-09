@@ -5,6 +5,7 @@ public class Persona {
     byte edad;
     char genero;
     String direccion;
+    boolean cliente;
 
     public static void obtenerInformacion(){
     }

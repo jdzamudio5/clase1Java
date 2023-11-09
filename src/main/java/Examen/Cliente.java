@@ -2,6 +2,11 @@ package Examen;
 
 public class Cliente extends Persona {
     int numeroCliente;
+
+    public Cliente(String nombre, byte edad, char genero, String direccion) {
+        super(nombre, edad, genero, direccion);
+    }
+
     public static void realizarTransaccion(){
     }
     public static void actualizarCliente(){
@@ -13,10 +18,6 @@ public class Cliente extends Persona {
         return numeroCliente;
     }
     public void setNumeroCliente(int numeroCliente) {
-        this.numeroCliente = numeroCliente;
-    }
-
-    public Cliente(int numeroCliente) {
         this.numeroCliente = numeroCliente;
     }
 }
