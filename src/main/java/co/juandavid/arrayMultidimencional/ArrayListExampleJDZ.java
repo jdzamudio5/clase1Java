@@ -14,9 +14,11 @@ public class ArrayListExampleJDZ {
     }
 
     public static void updateData() {
+
         cars.set(0,"Mazda");
     }
     public void getData1(){
+
         System.out.println(cars);
     }
 }

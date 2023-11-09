@@ -13,7 +13,7 @@ public class Main {
         if (user.equals("Occidente")&& password.equals("Occidente*2023")){
             JOptionPane.showMessageDialog(null, "Bienvenido, te has logueado.");
             } else if (user != "Occidente" || password != "Occidente*2023") {
-            JOptionPane.showMessageDialog(null, "Usuario o contraseña errada");
+            JOptionPane.showMessageDialog(null, "Cuenta o contraseña errada");
         } else {
             System.out.println("Error");
         }

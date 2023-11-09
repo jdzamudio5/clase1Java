@@ -10,9 +10,9 @@ public class Login {
         String usuarioRegistrado=getUser();
         String claveRegistrada=getPass();
         if (Objects.equals(usuario,usuarioRegistrado) && Objects.equals(clave,claveRegistrada)){
-            JOptionPane.showMessageDialog(null,"Usuario logueado");
+            JOptionPane.showMessageDialog(null,"Cuenta logueado");
         }else {
-            JOptionPane.showMessageDialog(null,"Usuario o contraseña invalido");
+            JOptionPane.showMessageDialog(null,"Cuenta o contraseña invalido");
         }
     }
 }
