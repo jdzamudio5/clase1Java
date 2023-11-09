@@ -14,7 +14,7 @@ public class Cliente {
         String apellidoCliente = JOptionPane.
                     showInputDialog(null, "Ingrese el apellido del cliene:");
         int identificacionCliente = Integer.parseInt(JOptionPane.
-                    showInputDialog(null, "Ingrese la identidicación del cliente:"));
+                    showInputDialog(null, "Ingrese la identidicacion del cliente:"));
 
         Usuarios cliente = new Usuarios(nombreCliente, apellidoCliente, identificacionCliente);
 
@@ -42,7 +42,7 @@ public class Cliente {
 
     public void actualizarDatos(){
         int identificacionCliente = Integer.parseInt(JOptionPane.
-                showInputDialog(null, "Ingrese la identidicación del cliente:"));
+                showInputDialog(null, "Ingrese la identidicacion del cliente:"));
         for (int i = 0; i < Clientes.size(); i++) {
             if (getClientes().get(i).getIdentificacionUsuario() == identificacionCliente) {
                 String nuevoNombre = JOptionPane.

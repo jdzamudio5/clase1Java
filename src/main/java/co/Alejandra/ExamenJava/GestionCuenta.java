@@ -3,9 +3,11 @@ package co.Alejandra.ExamenJava;
 import javax.swing.*;
 import java.util.ArrayList;
 
+import static co.Alejandra.ExamenJava.Cliente.Clientes;
+
 public class GestionCuenta {
 
-    public static ArrayList<Cuenta> Cuentas=new ArrayList<>();
+    public static ArrayList<Cuenta> Cuentas = new ArrayList<>();
 
     public static ArrayList<Cuenta> getCuentas(){
         return Cuentas;
@@ -14,21 +16,30 @@ public class GestionCuenta {
         double saldoCuenta=0;
 
         int identificacionCliente = Integer.parseInt(JOptionPane.
-                showInputDialog(null, "Ingrese la identidicación del cliente::"));
+                showInputDialog(null, "Ingrese la identidicacion del cliente: "));
         int numCuenta = Integer.parseInt(JOptionPane.
                 showInputDialog(null, "Ingrese el numero de la cuenta:"));
+
         while (saldoCuenta<50000){
             saldoCuenta = Double.parseDouble(JOptionPane.
                     showInputDialog(null,"Ingrese saldo de cuenta:"));
             if (saldoCuenta<50000){
-                JOptionPane.showMessageDialog(null, "El valor mínimo para abrir su cuenta es de 50.000");
+                JOptionPane.showMessageDialog(null, "El valor minimo para abrir su cuenta es de 50.000");
+            } else if (saldoCuenta>=50000) {
+                Cuenta cuentas = new Cuenta(identificacionCliente,numCuenta,saldoCuenta);
+                if (Cuentas.isEmpty()){
+                    Cuentas.add(0,cuentas);
+                    JOptionPane.showMessageDialog(null, "Su saldo actual es: "+
+                            getCuentas().get(0).getSaldo());
+                }else {
+                    for (int i=0; i<Cuentas.size(); i++){
+                        Cuentas.add(i,cuentas);
+                        JOptionPane.showMessageDialog(null, "Su saldo actual es: "+
+                                getCuentas().get(i).getSaldo());
+                    }
+                }
             }
         }
-        Cuenta cuentas = new Cuenta(identificacionCliente,numCuenta,saldoCuenta);
-        for (int i=0; i<Cuentas.size(); i++){
-            Cuentas.add(i,cuentas);
-        }
-
     }
 
     public void consignarDinero(){
@@ -52,7 +63,7 @@ public class GestionCuenta {
         int numCuenta = Integer.parseInt(JOptionPane.
                 showInputDialog(null, "Ingrese el numero de la cuenta:"));
         for (int i=0; i<Cuentas.size(); i++){
-            if ( getCuentas().get(i).getCuenta() == numCuenta) {
+            if (getCuentas().get(i).getCuenta() == numCuenta) {
                 JOptionPane.showMessageDialog(null, "Su saldo actual es: "+
                         getCuentas().get(i).getSaldo());
             }
@@ -75,7 +86,5 @@ public class GestionCuenta {
             }
         }
     }
-
-
 
 }

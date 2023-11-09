@@ -29,6 +29,8 @@ public class Banco {
                     break;
                 case 4:
                     System.out.println("Consultar saldo");
+                    GestionCuenta consulta=new GestionCuenta();
+                    consulta.consultaSaldo();
                     break;
                 case 5:
                     System.out.println("Retirar dinero");
@@ -49,6 +51,5 @@ public class Banco {
 
         }while (Menu!=7);
     }
-
 
 }
