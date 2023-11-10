@@ -7,21 +7,19 @@ public class Cliente extends Persona {
     private String Usuario;
     private String Contrasena;
 
-    public Cliente(String nombres, String apellidos, String numero_Documento,String Usuario,String Contrasena) {
+
+    public Cliente(Cuenta cuenta, String usuario, String contrasena) {
+        this.cuenta = cuenta;
+        Usuario = usuario;
+        Contrasena = contrasena;
+    }
+
+    public Cliente(String nombres, String apellidos, String numero_Documento, Cuenta cuenta, String usuario, String contrasena) {
         super(nombres, apellidos, numero_Documento);
-        this.Usuario = Usuario;
-        this.Contrasena = Contrasena;
+        this.cuenta = cuenta;
+        Usuario = usuario;
+        Contrasena = contrasena;
     }
-
-    public Cliente() {
-        super();
-
-    }
-
-    public Cliente(String nombres, String apellidos, String numero_Documento) {
-        super(nombres, apellidos, numero_Documento);
-    }
-
 
     public Cuenta getCuenta() {
         return cuenta;

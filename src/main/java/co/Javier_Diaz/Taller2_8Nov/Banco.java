@@ -3,62 +3,33 @@ package co.Javier_Diaz.Taller2_8Nov;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
-public class Banco extends Cliente{
-    private ArrayList Nombres = new ArrayList<>();
-    private ArrayList Apellidos = new ArrayList<>();
-    private ArrayList Numero_documento = new ArrayList<>();
-    private ArrayList Usuarios = new ArrayList<>();
-    private ArrayList Contrasenas = new ArrayList<>();
-    private ArrayList Saldos = new ArrayList<>();
-    private ArrayList Cuentas = new ArrayList<>();
-    // Declarar la matriz como un ArrayList de ArrayList
-
-    public Banco(String nombres, String apellidos, String numero_Documento, String Usuario, String Contrasena) {
-        this.Nombres = new ArrayList<>();
-        this.Nombres.add(nombres);
-
-        this.Apellidos = new ArrayList<>();
-        this.Apellidos.add(apellidos);
-
-        this.Numero_documento = new ArrayList<>();
-        this.Numero_documento.add(numero_Documento);
-
-        this.Usuarios = new ArrayList<>();
-        this.Usuarios.add(Usuario);
-
-        this.Contrasenas = new ArrayList<>();
-        this.Contrasenas.add(Contrasena);
-    }
+public class Banco{
+    private ArrayList<Cliente> Datos = new ArrayList<>();
 
     public Banco() {
-        super();
+    }
+    public Banco(ArrayList<Cliente> datos) {
+        Datos = datos;
     }
 
     public void requerirDatosNuevacuenta(){
-        /* Nombres.add(JOptionPane.showInputDialog("Nombres:"));
-        Apellidos.add(JOptionPane.showInputDialog("Apellidos:"));
-        Numero_documento.add(JOptionPane.showInputDialog("Identificacion:"));
-        Usuarios.add(JOptionPane.showInputDialog("Usuario:"));
-        Contrasenas.add(JOptionPane.showInputDialog("contraseña:")); */
+        int tempCuenta= (int) Math.random()+999;
+        double tempsaldo=50000;
+        String Nombres=(JOptionPane.showInputDialog("Nombres:"));
+        String Apellidos=(JOptionPane.showInputDialog("Apellidos:"));
+        String Numero_documento=(JOptionPane.showInputDialog("Identificacion:"));
+        String Usuarios=(JOptionPane.showInputDialog("Usuario:"));
+        String Contrasenas=(JOptionPane.showInputDialog("contraseña:"));
+
+        Cuenta cuenta = new Cuenta(tempCuenta,tempsaldo);
+        Cliente cliente = new Cliente(Nombres,Apellidos,Numero_documento,cuenta,Usuarios,Contrasenas);
+        Datos.add(cliente);
     }
 
-    public void mostrartodoslosdatos(){
-        /* for(int i = 0; i < Nombres.size(); i++) {
-            System.out.println(Nombres.get(i));
-            System.out.println(Apellidos.get(i));
-            System.out.println(Numero_documento.get(i));
-            System.out.println(Usuarios.get(i));
-            System.out.println(Contrasenas.get(i));
-        }*/
+    public void verClientes(){
+        for (int i=0;i<Datos.size();i++){
+            System.out.println(Datos.get(i).getCuenta().getNumero_Cuenta());
+        }
     }
-public void Mostrardatos(){
-    for(int i = 0; i < Nombres.size(); i++) {
-        System.out.println(Nombres.get(i));
-    }
-
-
-}
-
-
 }
 

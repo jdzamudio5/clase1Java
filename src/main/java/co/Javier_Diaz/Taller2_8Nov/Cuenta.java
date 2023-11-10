@@ -1,19 +1,19 @@
 package co.Javier_Diaz.Taller2_8Nov;
 
 public class Cuenta {
-    private String Numero_Cuenta;
+    private int Numero_Cuenta;
     private double Saldo;
 
-    public Cuenta(String numero_Cuenta, double saldo) {
+    public Cuenta(int numero_Cuenta, double saldo) {
         Numero_Cuenta = numero_Cuenta;
         Saldo = saldo;
     }
 
-    public String getNumero_Cuenta() {
+    public int getNumero_Cuenta() {
         return Numero_Cuenta;
     }
 
-    public void setNumero_Cuenta(String numero_Cuenta) {
+    public void setNumero_Cuenta(int numero_Cuenta) {
         Numero_Cuenta = numero_Cuenta;
     }
 
