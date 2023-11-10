@@ -17,33 +17,12 @@ public class Cliente extends Persona {
 
     // get y set
 
-    public int getIdCliente() {
-        return idCliente;
-    }
-
-    public void setIdCliente(int idCliente) {
-        this.idCliente = idCliente;
-    }
-
     public int getNumCuenta() {
         return numCuenta;
-    }
-
-    public void setNumCuenta(int numCuenta) {
-        this.numCuenta = numCuenta;
-    }
-
-    public String getCuenta() {
-        return cuenta;
     }
 
     public void setCuenta(String cuenta) {
         this.cuenta = cuenta;
     }
-
-
-    // metodos
-
-
 
 }

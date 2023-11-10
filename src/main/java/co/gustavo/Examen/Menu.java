@@ -8,9 +8,7 @@ public class Menu {
 
 
     private static ArrayList<Cliente> clientes = new ArrayList<>();
-    private static ArrayList<Banco> banco = new ArrayList<>();
 
-   //private static Banco banco1 = new Banco("Occidente");
 
     public void mostrarMenu() {
 
@@ -34,37 +32,22 @@ public class Menu {
               switch (opcion) {
                   case 1:
 
-
-                      String nombre = JOptionPane.showInputDialog("Digite el nombre del cliente:");
-                      String tipoDoc = JOptionPane.showInputDialog("Digite el tipo de Documento:");
-                      int numDoc = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero de Documento:"));
-                      int edad = Integer.parseInt(JOptionPane.showInputDialog("Digite la edad:"));
-                      int idCliente = Integer.parseInt(JOptionPane.showInputDialog("Digite el id del Cliente:"));
-                      int numCuenta = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero de cuenta:"));
-
-
-                      Cliente nuevoCliente = new Cliente(nombre, tipoDoc, numDoc, edad, idCliente, numCuenta);
-                      clientes.add(nuevoCliente);
-                      JOptionPane.showMessageDialog(null, "El cliente ha sido creado.");
-                      break;
+                     clienteNuevo();
+                     break;
 
                   case 2:
 
                       consultarCliente();// Busqueda de cliente
-
-
                       break;
 
                   case 3:
 
                       actualizarCliente();// Busqueda de cliente
-
                       break;
 
                   case 4:
 
-                        crearCuenta();
-
+                      crearCuenta();
                       break;
 
                   case 5:
@@ -97,6 +80,21 @@ public class Menu {
     }// fin mostrar menu
 
 
+
+    private void clienteNuevo() {
+
+        String nombre = JOptionPane.showInputDialog("Digite el nombre del cliente:");
+        String tipoDoc = JOptionPane.showInputDialog("Digite el tipo de Documento:");
+        int numDoc = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero de Documento:"));
+        int edad = Integer.parseInt(JOptionPane.showInputDialog("Digite la edad:"));
+        int idCliente = Integer.parseInt(JOptionPane.showInputDialog("Digite el id del Cliente:"));
+        int numCuenta = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero de cuenta:"));
+
+
+        Cliente nuevoCliente = new Cliente(nombre, tipoDoc, numDoc, edad, idCliente, numCuenta);
+        clientes.add(0,nuevoCliente);
+        JOptionPane.showMessageDialog(null, "El cliente ha sido creado.");
+    }
 
     private void consultarCliente() {
 
@@ -154,7 +152,7 @@ public class Menu {
                 Cliente cliente = clientes.get(i);
                 if (cliente.getNumDoc() == numDoc) {
 
-                    int saldo = Integer.parseInt(JOptionPane.showInputDialog("Digite el saldo a crear la cuenta :"));
+                    double saldo = Double.parseDouble(JOptionPane.showInputDialog("Digite el saldo a crear la cuenta :"));
                     Cuenta cuenta = new Cuenta("001",saldo,cliente);
                     Banco.abrirCuenta(cuenta);
 
@@ -181,31 +179,3 @@ public class Menu {
 
 
 
-// Codigo para agregar a un panel
-
- /*StringBuilder clientesInfo = new StringBuilder("Clientes almacenados:\n");
-                    if (clientes.isEmpty()) {
-                        clientesInfo.append("No hay clientes almacenados.");
-                    } else {
-                        for (Cliente cliente : clientes) {
-                            clientesInfo.append("Nombre: ").append(cliente.getNombre()).append(" - Edad: ").append(cliente.getEdad()).append("\n");
-                        }
-                    }
-                    JOptionPane.showMessageDialog(null, clientesInfo.toString());
-                    break;*/
-
-
-
-/*
-
-// Lista de Clientes (Control)
-                      if (clientes.isEmpty()) {
-                          System.out.println("No hay clientes almacenados.");
-                      } else {
-                          System.out.println("Clientes creados:");
-                          for (int i = 0; i < clientes.size(); i++) {
-                              Cliente cliente = clientes.get(i);
-                              System.out.println("Nombre: " + cliente.getNombre() + "  Documento: " + cliente.getTipoDoc() + cliente.getNumDoc() + " - Edad: " + cliente.getEdad());
-                          }
-                      }
- */

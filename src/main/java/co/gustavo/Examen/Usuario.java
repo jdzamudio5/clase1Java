@@ -12,7 +12,6 @@ public class Usuario extends Persona{
         this.email= email;
     }
 
-    //MEtodos
 
 
 }

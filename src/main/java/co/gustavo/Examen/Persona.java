@@ -28,13 +28,6 @@ public class Persona {
         return tipoDoc;
     }
 
-    public void setTipoDoc(String tipoDoc) {
-        this.tipoDoc = tipoDoc;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
 
     public void setEdad(int edad) {
         this.edad = edad;
@@ -43,25 +36,6 @@ public class Persona {
     public int getNumDoc() {
         return numDoc;
     }
-
-    public void setNumDoc(int numDoc) {
-        this.numDoc = numDoc;
-    }
-
-
-
-    // Método para imprimir información de la persona
-    public void Informacion() {
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Ocupación: " + tipoDoc);
-        System.out.println("Ocupación: " + numDoc);
-        System.out.println("Edad: " + edad);
-
-    }
-
-
-
-
 
 
     }
