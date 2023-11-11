@@ -1,43 +1,33 @@
 package co.Lina.EjercicioBanco;
 
-import co.Lina.Ejercicios.Registro;
-
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     static Banco banco= new Banco(10);
     static Scanner scanner = new Scanner(System.in);
     static String nombre, apellido;
-    static int identificador,productos=1,numeroCuenta,cantidad;
+    static int identificador,numeroCuenta;
     static double saldo;
     static Cliente cliente;
-    static Cuenta[] cuentas;
-
+    static Persona usuario;
 
     public static void main(String[] args) {
-
-        //crearCuenta();
-        //consultarDatos();
-        //Persona usuario = new Persona("Lina","Garzon",1010);
-        //System.out.println(usuario.getNombre());
-        //consultarDatos();
-
         menu();
     }
 
     public static void menu(){
 
-        boolean menu = true;
-        while (menu) {
+        while (true) {
             System.out.println("Menu");
             System.out.println("1. Crear Usuario");
             System.out.println("2. Depositar");
             System.out.println("3. Retirar");
             System.out.println("4. Ver el saldo");
             System.out.println("5. Consultar datos");
-            System.out.println("6. Salir");
-            System.out.println("Selecciona una opcion ");
+            System.out.println("6. Validar si existe usuario");
+            System.out.println("7. Consultar Cuenta");
+            System.out.println("8. Salir");
+            System.out.println("Selecciona una opcion: ");
             int opc = scanner.nextInt();
             scanner.nextLine();
             switch (opc) {
@@ -54,11 +44,18 @@ public class Main {
                     consultarSaldo();
                     break;
                 case 5:
-                    System.out.println("Programa en mantenimiento");
-                   // consultarDatos();
+                   consultarDatos();
                     break;
                 case 6:
-                    System.out.println("Cerrar programa");
+                    validarsiExiste();
+                    break;
+                case 7:
+                    System.out.print("Digite su nmero de identificacion: ");
+                    identificador= scanner.nextInt();
+                    conocerCuenta(identificador);
+                    break;
+                case 8:
+                    System.out.print("Cerrar programa");
                     System.exit(0);
                     break;
                 default:
@@ -68,40 +65,48 @@ public class Main {
         }
     }
 
-    public static void crearCuenta(){
+    public static void crearCuenta() {
 
-        System.out.println("DiGite su nombre:");
-        nombre=scanner.nextLine();
-        System.out.println("Digite su apellido: ");
-        apellido=scanner.nextLine();
-        System.out.println("Digite su nmero de identificacion: ");
-        identificador=scanner.nextInt();
-        System.out.println("Saldo Inicial: ");
-        saldo=scanner.nextInt();
+        System.out.print("Digite su nombre: ");
+        nombre = scanner.nextLine();
+        System.out.print("Digite su apellido: ");
+        apellido = scanner.nextLine();
+        System.out.print("Digite su nmero de identificacion: ");
+        identificador = scanner.nextInt();
+        System.out.print("Saldo Inicial: ");
+        saldo = scanner.nextInt();
 
-        Persona usuario=new Persona(nombre,apellido,identificador);
+        usuario = new Persona(nombre, apellido, identificador);
 
-        if(banco.exiteCliente(usuario,identificador)){
-            System.out.println("Este usuario ya existe");
-            System.exit(0);
-        }else{
-            if(saldo>=50000){
-                cliente= new Cliente(nombre,apellido,identificador);
-                banco.crearCuenta(identificador,saldo);
-            }else{
+            if (saldo>=50000) {
+                cliente=new Cliente(nombre, apellido, identificador);
+                banco.crearCuenta(cliente, saldo);
+           } else {
                 System.out.println("Valor del saldo es menor a 50000, no se puede crear la cuenta");
                 System.exit(0);
             }
+
+    }
+
+    public static void validarsiExiste(){
+        System.out.print("Digite su nmero de identificacion: ");
+        int ident=scanner.nextInt();
+
+        if(usuario.exitePersona(ident)){
+            System.out.println("Existe Usuario");
+        }else{
+            System.out.println("No existe usuario");
         }
+
     }
 
     public static void realizarDeposito (){
-        System.out.println("Numero de cuenta a depositar");
+        System.out.print("Numero de cuenta a depositar: ");
         numeroCuenta=scanner.nextInt();
-        Cuenta cuentaDepo=banco.obtenerNumeroCuenta(numeroCuenta);
+        Cuenta cuentaDepo=banco.saldoCuenta(numeroCuenta);
 
         if (cuentaDepo!=null) {
-            System.out.println("Cantidad a depositar:");
+            System.out.print("Cantidad a depositar: ");
             saldo=scanner.nextDouble();
             cuentaDepo.depositarenCuenta(saldo);
             System.out.println("Deposiro realizado");
@@ -111,14 +116,14 @@ public class Main {
     }
 
     public static void realizarRetiro(){
-        System.out.println("Numero de cuenta a realizar retito");
+        System.out.print("Numero de cuenta a realizar retito: ");
         numeroCuenta=scanner.nextInt();
-        Cuenta cuentaRet=banco.obtenerNumeroCuenta(numeroCuenta);
+        Cuenta cuentaRet=banco.saldoCuenta(numeroCuenta);
 
         if (cuentaRet!=null) {
-            System.out.println("Cantidad a Retirar:");
+            System.out.print("Cantidad a Retirar: ");
             saldo=scanner.nextDouble();
-            cuentaRet.depositarenCuenta(saldo);
+            cuentaRet.retirarenCuenta(saldo);
             System.out.println("Retiro realizado");
         }else{
             System.out.println("Cuenta invalida");
@@ -126,29 +131,32 @@ public class Main {
     }
 
     public static void consultarSaldo(){
-        System.out.println("Numero de cuenta a consultar saldo");
+        System.out.print("Numero de cuenta a consultar saldo: ");
         numeroCuenta=scanner.nextInt();
-        Cuenta saldoCuenta=banco.obtenerNumeroCuenta(numeroCuenta);
-        if(saldoCuenta!=null){
-            System.out.println("Saldo en cuenta :" +saldoCuenta.getSaldoCuenta());
+        Cuenta saldoCue=banco.saldoCuenta(numeroCuenta);
+        if(saldoCue!=null){
+            System.out.println("Saldo en cuenta :" +saldoCue.getSaldoCuenta());
         }else{
             System.out.println("Cuenta invalida");
         }
     }
 
     public static void consultarDatos(){
-        System.out.println("Digite su nmero de identificacion: ");
+        System.out.print("Digite su nmero de identificacion: ");
         int ident=scanner.nextInt();
 
-        Cuenta consultar=banco.buscarCliente(ident);
-        if(consultar!=null){
-            Persona usuario=consultar.getUsuario();
-            System.out.println("Nombre "+usuario.getNombre());
-        }else {
-            System.out.println("Cliente no exite");
+        usuario.mostrarDatos(ident);
+        conocerCuenta(ident);
+    }
+
+    public static void conocerCuenta(int identificador){
+
+        numeroCuenta = banco.conocernumCuenta(identificador);
+        if (numeroCuenta != -1) {
+            System.out.println("Numero de cuenta: " + numeroCuenta);
+        } else {
+            System.out.println("No existe usuario");
         }
 
-        //Persona usuario = new Persona();
-        //usuario.mostrarDatos(identificador);
     }
 }

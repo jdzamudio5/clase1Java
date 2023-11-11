@@ -9,7 +9,7 @@ public class Banco {
         cantidadCuentas=0;
     }
 
-    public  void crearCuenta(int usuario, double saldo){
+    public  void crearCuenta(Cliente usuario, double saldo){
         if(cantidadCuentas < cuentas.length){
             cuentas[cantidadCuentas]=new Cuenta(usuario, saldo);
             cantidadCuentas++;
@@ -19,31 +19,19 @@ public class Banco {
         }
     }
 
-    public Cuenta obtenerNumeroCuenta(int numCuenta){
+    public Cuenta saldoCuenta(int numCuenta){
         if (numCuenta>=1 && numCuenta<=cantidadCuentas ) {
             return cuentas[numCuenta-1];
         }
         return null;
     }
 
-    public boolean exiteCliente(Persona usuario,int numIdentificacion){
-
-        for (int i = 0; i < cantidadCuentas; i++) {
-            if (cuentas[i].getUsuario().getNombre().equals(usuario.getNombre()) &&
-            cuentas[i].getUsuario().getApellido().equals(usuario.getApellido()) &&
-            cuentas[i].getUsuario().getNumero_Identificacion()==numIdentificacion){
-                return true;
+    public int conocernumCuenta(int numIdentificacion) {
+        for (int i=0;i<cantidadCuentas;i++) {
+            if (cuentas[i].getUsuario().getNumero_Identificacion()==numIdentificacion) {
+                return i+1;
             }
         }
-        return false;
-    }
-
-    public Cuenta buscarCliente(int numIdentificacion){
-        for (int i = 0; i < cantidadCuentas; i++) {
-            if(cuentas[i].getUsuario().getNumero_Identificacion()==numIdentificacion){
-                return cuentas[i];
-            }
-        }
-        return null;
+        return -1;
     }
 }
