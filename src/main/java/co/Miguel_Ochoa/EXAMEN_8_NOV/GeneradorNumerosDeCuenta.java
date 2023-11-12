@@ -34,7 +34,7 @@ public class GeneradorNumerosDeCuenta {
 
 
     private String generarNumeroAleatorio() {
-        long numeroAleatorio = (long) (Math.random() * 100000000000L); // Genera un número largo aleatorio entre 0 y 99999999999
+        long numeroAleatorio = (long) (Math.random() * 100000000000L); // Genera un número largo aleatorio entre 0 y 99999999999, emulando un numero de cuenta de 11 digitos
         return Long.toString(numeroAleatorio);
     }
 

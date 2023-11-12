@@ -21,7 +21,7 @@ public class CrearCuenta {
         // Genera un número de cuenta único
         String numeroDeCuenta = GeneradorNumerosDeCuenta.getInstance().generarNumeroDeCuentaUnico();
 
-        // Crea una cuenta de acuerdo al tipo especificado
+        // Crea una cuenta de acuerdo al tipo ya sea ahorro o corriente
         if (tipoDeCuenta.equalsIgnoreCase("Ahorro")) {
             nuevaCuenta = new CuentaAhorro(numeroDeCuenta, saldoInicial);
         } else if (tipoDeCuenta.equalsIgnoreCase("Corriente")) {

@@ -39,7 +39,6 @@ public class Banco {
     public void actualizarCliente(Cliente cliente, String nombre, String apellido) {
         cliente.setNombre(nombre);
         cliente.setApellido(apellido);
-        // Otras actualizaciones según sea necesario
     }
 
     // Método para eliminar un cliente

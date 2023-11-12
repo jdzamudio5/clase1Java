@@ -91,7 +91,7 @@ public class Menu {
                                 JOptionPane.showMessageDialog(null, "El saldo inicial debe ser al menos de $50.000");
                                 break;
                             }
-                            CrearCuenta servicioCrearCuenta = new CrearCuenta(); // Asumiendo que CrearCuenta no necesita argumentos en el constructor
+                            CrearCuenta servicioCrearCuenta = new CrearCuenta();
                             Cuenta nuevaCuenta = servicioCrearCuenta.crearCuenta(clienteParaCrearCuenta, tipoDeCuenta, saldoInicial);
                             JOptionPane.showMessageDialog(null, "Cuenta creada con exito. Número de cuenta: " + nuevaCuenta.getNumeroDeCuenta());
                         } catch (NumberFormatException e) {
