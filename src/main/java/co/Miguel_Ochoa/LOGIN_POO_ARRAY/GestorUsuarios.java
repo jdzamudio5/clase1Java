@@ -12,7 +12,7 @@ public class GestorUsuarios {
 
     public void registrarUsuario() {
         String nombreCompleto = JOptionPane.showInputDialog("Ingrese su nombre completo:");
-        String cedula = JOptionPane.showInputDialog("Ingrese su cédula:");
+        String cedula = JOptionPane.showInputDialog("Ingrese su cedula:");
         String correo = JOptionPane.showInputDialog("Ingrese su correo electronico:");
         String nombreUsuario = JOptionPane.showInputDialog("Ingrese su nombre de usuario:");
         String contrasena = JOptionPane.showInputDialog("Ingrese su contrasena:");
@@ -49,7 +49,7 @@ public class GestorUsuarios {
                 String nuevacontrasena = JOptionPane.showInputDialog("Ingrese la nueva contrasena:", usuario.getcontrasena());
                 usuario.setcontrasena(nuevacontrasena);
 
-                JOptionPane.showMessageDialog(null, "Informacion actualizada con éxito.");
+                JOptionPane.showMessageDialog(null, "Informacion actualizada con exito.");
                 mostrarMenu();
                 return;
             }
@@ -98,7 +98,7 @@ public class GestorUsuarios {
                 "Salir"
         };
         int seleccion = JOptionPane.showOptionDialog(
-                null, "Seleccione una opcion", "Menú",
+                null, "Seleccione una opcion", "Menu",
                 JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
                 null, opciones, opciones[0]
         );
