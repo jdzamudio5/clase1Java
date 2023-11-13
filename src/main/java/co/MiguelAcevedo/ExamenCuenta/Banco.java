@@ -31,6 +31,9 @@ public class Banco {
         Cuenta cuenta = new Cuenta(cliente);
         cuentas.add(cuenta);
     }
+    public void actualizarInfo(){
+
+    }
 
     public ArrayList<Cliente> getClientes() {
         return clientes;
