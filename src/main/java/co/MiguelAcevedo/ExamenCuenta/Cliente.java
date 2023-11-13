@@ -13,10 +13,6 @@ public class Cliente extends Persona {
         this.clienteExiste = clienteExiste;
     }
 
-    //public Cliente() {
-    //    super();
-    //}
-
     public boolean isClienteExiste() {
         return clienteExiste;
     }

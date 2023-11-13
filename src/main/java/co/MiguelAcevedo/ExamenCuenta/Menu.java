@@ -38,11 +38,5 @@ public class Menu {
             }
         }while (opcion!=5);
         System.exit(0);
-
-
-        //Banco banco = new Banco();
-        //GestionCuenta gestionCuenta= new GestionCuenta();
-        //gestionCuenta.crearCuenta();2
-
     }
 }

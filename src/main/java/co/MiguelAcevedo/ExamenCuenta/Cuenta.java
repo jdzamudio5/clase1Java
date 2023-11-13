@@ -2,32 +2,31 @@ package co.MiguelAcevedo.ExamenCuenta;
 
 import javax.swing.*;
 import java.util.ArrayList;
-import java.util.Random;
 
 public class Cuenta {
+    private ArrayList<Cliente> clientes;
     private ArrayList<Cliente> cuentas;
-    //Cliente cliente = new Cliente();
 
     public Cuenta(){
+        clientes = new ArrayList<>();
         cuentas = new ArrayList<>();
     }
     private String tipoCuenta;
     private int numCuenta;
-    //private int identificacionUsuario;
     private double saldoCuenta;
     private Cliente cliente;
-        //Random rand = new Random();
     public Cuenta(String tipoCuenta, int numCuenta, double saldoCuenta, Cliente cliente) {
         this.tipoCuenta = tipoCuenta;
-        //Random numAleatorio = new Random();
-        //this.numCuenta=Math.abs(numAleatorio.nextInt(numCuenta));
         this.numCuenta= numCuenta;
         this.saldoCuenta= saldoCuenta;
         this.cliente=cliente;
     }
+    public ArrayList<Cliente> getClientes() {
+        return clientes;
+    }
 
-    public ArrayList<Cliente> getCuentas() {
-        return cuentas;
+    public void setClientes(ArrayList<Cliente> clientes) {
+        this.clientes = clientes;
     }
 
     public void setCuentas(ArrayList<Cliente> cuentas) {
@@ -37,10 +36,7 @@ public class Cuenta {
     public Cuenta(Cliente cliente) {
         this.cliente=cliente;
     }
-    public void crearCuenta(Cliente cliente){
-        Cuenta cuenta = new Cuenta(cliente);
-        cuentas.add(cuenta.getCliente());
-    }
+
     public String getTipoCuenta() {
         return tipoCuenta;
     }

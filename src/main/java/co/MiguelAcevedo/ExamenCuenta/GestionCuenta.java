@@ -26,7 +26,6 @@ public class GestionCuenta {
             int identificacionUsuario = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la identificación del usuario."));
             cliente = new Cliente(nombre, apellido, identificacionUsuario, false);
             banco.crearCliente(cliente);
-            //clientes.add(cliente);
             JOptionPane.showMessageDialog(null, "El usuario "+ cliente.getNombre()+" ha sido registrado.");
         }
         public void buscarCliente(){
@@ -34,37 +33,29 @@ public class GestionCuenta {
         cliente = banco.buscarCliente(Integer.parseInt(identificacionUsuario));
             if (cliente != null) {
                 JOptionPane.showMessageDialog(null,
-                        "cliente encontrado "+ cliente.getNombre()+" "+ cliente.getApellido()+" ID: "+cliente.getIdentificacionUsuario()+"\n");
+                        "cliente encontrado... Nombre: "+ cliente.getNombre()+" "+ cliente.getApellido()+" ID: "+cliente.getIdentificacionUsuario()+" Cuenta: " + cuenta.getNumCuenta());
             } else {
                 JOptionPane.showMessageDialog(null,"cliente no encontrado");
             }
         }
-    public void crearCuentaAh(){
-        String identificacionUsuario = JOptionPane.showInputDialog("ingrese la identificación del usuario:");
-        cliente = banco.buscarCliente(Integer.parseInt(identificacionUsuario));
-        if (cliente != null) {
-            String tipoCuenta = JOptionPane.showInputDialog(null, "Ingrese el tipo de cuenta del usuario.");
-            int numCuenta = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el número de cuenta."));
-            double saldoCuenta = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el saldo inicial de la cuenta."));
-            //cuenta.saldoCuenta();
-            //int numCuenta = cuenta.getNumCuenta();
-            //double saldoCuenta = cuenta.getSaldoCuenta();
-            cuenta = new Cuenta(tipoCuenta, numCuenta, saldoCuenta, cliente);
-            cuenta.crearCuenta(cliente);
-            JOptionPane.showMessageDialog(null,"la cuenta del usuario "+ cliente.getNombre()+" ha sido creada con éxito.");
-        } else {
-            JOptionPane.showMessageDialog(null,"cliente no encontrado");
+        public void crearCuentaAh(){
+          String identificacionUsuario = JOptionPane.showInputDialog("ingrese la identificación del usuario:");
+            cliente = banco.buscarCliente(Integer.parseInt(identificacionUsuario));
+            int leftLimit = 100000000;
+            int rightLimit = 900000000;
+            int numAleat = leftLimit + (int) (Math.random() * (rightLimit - leftLimit));
+
+          if (cliente != null) {
+                String tipoCuenta = JOptionPane.showInputDialog(null, "Ingrese el tipo de cuenta del usuario.");
+                int numCuenta = numAleat;
+                double saldoCuenta = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el saldo inicial de la cuenta, debe ser mayor o igual a $50.000"));
+                cuenta = new Cuenta(tipoCuenta, numCuenta, saldoCuenta, cliente);
+                banco.crearCuenta(cliente);
+                JOptionPane.showMessageDialog(null,"la cuenta "+ cuenta.getNumCuenta()+" del usuario "+ cliente.getNombre()+" ha sido creada con éxito.");
+            } else {
+               JOptionPane.showMessageDialog(null,"cliente no encontrado");
+         }
         }
-    }
-    public void actualizarInfos(){
-        int identificacionUsuario = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el usuario a buscar."));
-        cliente = banco.buscarCliente(identificacionUsuario);
-        if (cliente != null) {
-            JOptionPane.showMessageDialog(null,"cliente encontrado "+ cliente.getNombre());
-        } else {
-            JOptionPane.showMessageDialog(null,"cliente no encontrado");
-        }
-    }
         public void actualizarInfo() {
             String identificacionUsuario = JOptionPane.showInputDialog("ingrese la identificación del usuario:");
             cliente = banco.buscarCliente(Integer.parseInt(identificacionUsuario));
@@ -76,8 +67,6 @@ public class GestionCuenta {
             } else {
                 JOptionPane.showMessageDialog(null,"cliente no encontrado");
             }
-
-
         }
     }
 

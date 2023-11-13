@@ -1,15 +1,10 @@
 package co.MiguelAcevedo.ExamenCuenta;
 
-import javax.swing.*;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
 public class Banco {
-
     private ArrayList<Cliente> clientes;
     private ArrayList<Cuenta> cuentas;
-    //Cliente cliente = new Cliente();
 
     public Banco(){
         clientes = new ArrayList<>();
@@ -17,22 +12,17 @@ public class Banco {
     }
     public void crearCliente(Cliente cliente){
         clientes.add(cliente);
-        //JOptionPane.showMessageDialog(null, "El usuario "+cliente.getNombre()+" ha sido registrado.");
     }
-
+    public void crearCuenta(Cliente cliente){
+        Cuenta cuenta = new Cuenta(cliente);
+        cuentas.add(cuenta);
+    }
     public Cliente buscarCliente(int identificacionUsuario){
         for (Cliente cliente : clientes){
             if (cliente.getIdentificacionUsuario()==identificacionUsuario){
                 return cliente;
             }
         }return null;
-    }
-    public void crearCuenta(Cliente cliente){
-        Cuenta cuenta = new Cuenta(cliente);
-        cuentas.add(cuenta);
-    }
-    public void actualizarInfo(){
-
     }
 
     public ArrayList<Cliente> getClientes() {
