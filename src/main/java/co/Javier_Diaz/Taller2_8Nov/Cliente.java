@@ -7,18 +7,22 @@ public class Cliente extends Persona {
     private String Usuario;
     private String Contrasena;
 
+    private boolean Estado_Cliente;
 
-    public Cliente(Cuenta cuenta, String usuario, String contrasena) {
+
+    public Cliente(Cuenta cuenta, String usuario, String contrasena, boolean estado_Cliente) {
         this.cuenta = cuenta;
         Usuario = usuario;
         Contrasena = contrasena;
+        Estado_Cliente = estado_Cliente;
     }
 
-    public Cliente(String nombres, String apellidos, String numero_Documento, Cuenta cuenta, String usuario, String contrasena) {
+    public Cliente(String nombres, String apellidos, String numero_Documento, Cuenta cuenta, String usuario, String contrasena, boolean estado_Cliente) {
         super(nombres, apellidos, numero_Documento);
         this.cuenta = cuenta;
         Usuario = usuario;
         Contrasena = contrasena;
+        Estado_Cliente = estado_Cliente;
     }
 
     public Cuenta getCuenta() {
@@ -43,5 +47,13 @@ public class Cliente extends Persona {
 
     public void setContrasena(String contrasena) {
         Contrasena = contrasena;
+    }
+
+    public boolean getEstado_Cliente() {
+        return Estado_Cliente;
+    }
+
+    public void setEstado_Cliente(boolean estado_Cliente) {
+        Estado_Cliente = estado_Cliente;
     }
 }

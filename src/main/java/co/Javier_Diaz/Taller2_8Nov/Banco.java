@@ -62,8 +62,8 @@ public class Banco{
                 JOptionPane.showMessageDialog(null, "Opcion no valida");
         }
 
-        Cuenta cuenta = new Cuenta(tempCuenta,tempsaldo);
-        Cliente cliente = new Cliente(Nombres,Apellidos,Numero_documento,cuenta,Usuarios,Contrasenas);
+        Cuenta cuenta = new Cuenta(tempCuenta,tempsaldo,true);
+        Cliente cliente = new Cliente(Nombres,Apellidos,Numero_documento,cuenta,Usuarios,Contrasenas,true);
         Datos.add(cliente);
     }
 
@@ -76,9 +76,11 @@ public class Banco{
             mensajeBuilder.append("Nombres: ").append(Datos.get(i).getNombres()).append("\n");
             mensajeBuilder.append("Apellidos: ").append(Datos.get(i).getApellidos()).append("\n");
             mensajeBuilder.append("Numero de Documento: ").append(Datos.get(i).getNumero_Documento()).append("\n");
+            mensajeBuilder.append("Estado Cliente: ").append(Datos.get(i).getEstado_Cliente()).append("\n");
             mensajeBuilder.append("Usuario: ").append(Datos.get(i).getUsuario()).append("\n");
             mensajeBuilder.append("Contrasena: ").append(Datos.get(i).getContrasena()).append("\n");
             mensajeBuilder.append("Numero de Cuenta: ").append(Datos.get(i).getCuenta().getNumero_Cuenta()).append("\n");
+            mensajeBuilder.append("Estado de Cuenta: ").append(Datos.get(i).getCuenta().getEstadoCuenta()).append("\n");
             mensajeBuilder.append("Saldo: ").append(Datos.get(i).getCuenta().getSaldo()).append("\n");
             mensajeBuilder.append("-------------------------------------------------------------------------------------\n\n");
         }
@@ -158,8 +160,6 @@ public class Banco{
         }
     }
     public void Retiro(){
-
-        {
             int Numero_Cuenta = -1;
             String Numero_identificacion="Null";
 
@@ -227,6 +227,113 @@ public class Banco{
                     JOptionPane.showMessageDialog(null, "Opcion no valida");
             }
         }
+
+        public void ActulizarCliente(){
+           String TempNumero_Identificacion= JOptionPane.showInputDialog("Numero De Identificacion:");
+            boolean ValidacionClinete=false;
+
+            for (int i = 0; i < Datos.size(); i++) {
+                if (TempNumero_Identificacion.equals(Datos.get(i).getNumero_Documento())){
+                    ValidacionClinete=true;
+                }
+            }
+
+            if (ValidacionClinete){
+
+                String TempNombres= JOptionPane.showInputDialog("Ingrese Nombres");
+                String TempApellidos= JOptionPane.showInputDialog("Ingrese Apellidos");
+                String TempUsuario= JOptionPane.showInputDialog("Ingrese Usuarios");
+                String TempClave= JOptionPane.showInputDialog("Ingrese Clave");
+
+                for (int i = 0; i < Datos.size(); i++) {
+                    if (TempNumero_Identificacion.equals(Datos.get(i).getNumero_Documento())){
+                        Datos.get(i).setNombres(TempNombres);
+                        Datos.get(i).setApellidos(TempApellidos);
+                        Datos.get(i).setUsuario(TempUsuario);
+                        Datos.get(i).setContrasena(TempNumero_Identificacion);
+                    }
+                }
+
+                JOptionPane.showMessageDialog(null, "Informacion del Ciente Actulizada");
+
+            }else {
+                JOptionPane.showMessageDialog(null, "No Existen Clientes con este numero de Documento");
+            }
+
+        }
+
+    public void ElimiarCuenta(){
+        int Numero_Cuenta = -1;
+        String Numero_identificacion="Null";
+
+        int opcion_Eliminar;
+        String[] opciones_Eliminar = {"Numero de Cuenta", "Numero de Documento"};
+        opcion_Eliminar = JOptionPane.showOptionDialog(
+                null,
+                "Selecciona una opcion:",
+                "Banco De Occidente",
+                JOptionPane.DEFAULT_OPTION,
+                JOptionPane.QUESTION_MESSAGE,
+                null,
+                opciones_Eliminar,
+                opciones_Eliminar[0]);
+
+        switch (opcion_Eliminar){
+            case 0:
+                Numero_Cuenta= Integer.parseInt((JOptionPane.showInputDialog("Numero De Cuenta:")));
+                for (int i = 0; i < Datos.size(); i++) {
+                    if (Numero_Cuenta == Datos.get(i).getCuenta().getNumero_Cuenta()) {
+                        Datos.get(i).getCuenta().setEstadoCuenta(false);
+                        JOptionPane.showMessageDialog(null, "El nuevo estado de la cuenta: "+Datos.get(i).getCuenta().getNumero_Cuenta()+" es Desactivada");
+                    }
+                }
+                break;
+
+            case 1:
+                Numero_identificacion=(JOptionPane.showInputDialog("Numero De identificacion:"));
+                ArrayList<Integer> CuentaIdentificacion = new ArrayList<>();
+
+                for (int i = 0; i < Datos.size(); i++) {
+                    if (Numero_identificacion.equals(Datos.get(i).getNumero_Documento())){
+                        CuentaIdentificacion.add(Datos.get(i).getCuenta().getNumero_Cuenta());
+                    }
+                }
+
+                Integer[] arrayCuentas = CuentaIdentificacion.toArray(new Integer[CuentaIdentificacion.size()]);
+
+                int opcion_Cuenta_Retiro;
+                int Cuenta_opcion_Retiro = JOptionPane.showOptionDialog(
+                        null,
+                        "Selecciona una Cuenta:",
+                        "Banco De Occidente",
+                        JOptionPane.DEFAULT_OPTION,
+                        JOptionPane.QUESTION_MESSAGE,
+                        null,
+                        arrayCuentas,
+                        arrayCuentas[0]);
+
+
+                for (int i = 0; i < Datos.size(); i++) {
+                    if (arrayCuentas[Cuenta_opcion_Retiro] == Datos.get(i).getCuenta().getNumero_Cuenta()) {
+                        Datos.get(i).getCuenta().setEstadoCuenta(false);
+                        JOptionPane.showMessageDialog(null, "El nuevo estado de la cuenta: "+Datos.get(i).getCuenta().getNumero_Cuenta()+" es Desactivada");
+                    }
+                }
+
+                break;
+
+            default:
+                JOptionPane.showMessageDialog(null, "Opcion no valida");
+        }
+    }
+        public void ElimiarCliente(){
+            String Numero_identificacion=(JOptionPane.showInputDialog("Numero De identificacion:"));
+            for (int i = 0; i < Datos.size(); i++) {
+                if (Numero_identificacion.equals(Datos.get(i).getNumero_Documento())){
+                    Datos.get(i).setEstado_Cliente(false);
+                }
+            }
+        }
 }
-}
+
 

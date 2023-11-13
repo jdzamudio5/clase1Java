@@ -4,9 +4,12 @@ public class Cuenta {
     private int Numero_Cuenta;
     private double Saldo;
 
-    public Cuenta(int numero_Cuenta, double saldo) {
+    private boolean EstadoCuenta;
+
+    public Cuenta(int numero_Cuenta, double saldo, boolean estadoCuenta) {
         Numero_Cuenta = numero_Cuenta;
         Saldo = saldo;
+        EstadoCuenta = estadoCuenta;
     }
 
     public int getNumero_Cuenta() {
@@ -23,5 +26,13 @@ public class Cuenta {
 
     public void setSaldo(double saldo) {
         Saldo = saldo;
+    }
+
+    public boolean getEstadoCuenta() {
+        return EstadoCuenta;
+    }
+
+    public void setEstadoCuenta(boolean estadoCuenta) {
+        EstadoCuenta = estadoCuenta;
     }
 }
