@@ -23,5 +23,8 @@ public class Array_List_Example {
         System.out.println(cars);
     }
 
+    public static void main(String[] args) {
+
+    }
 
 }
