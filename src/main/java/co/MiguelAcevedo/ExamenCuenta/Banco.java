@@ -24,20 +24,11 @@ public class Banco {
             }
         }return null;
     }
-
-    public ArrayList<Cliente> getClientes() {
-        return clientes;
-    }
-
-    public void setClientes(ArrayList<Cliente> clientes) {
-        this.clientes = clientes;
-    }
-
-    public ArrayList<Cuenta> getCuentas() {
-        return cuentas;
-    }
-
-    public void setCuentas(ArrayList<Cuenta> cuentas) {
-        this.cuentas = cuentas;
+    public Cuenta buscarCuentas(int numCuenta){
+        for (Cuenta cuenta : cuentas){
+            if (cuenta.getNumCuenta()==numCuenta){
+                return cuenta;
+            }
+        }return null;
     }
 }

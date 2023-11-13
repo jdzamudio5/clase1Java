@@ -15,7 +15,8 @@ public class Menu {
                             +"2. Crear Cuenta\n"
                             +"3. Actualizar cliente\n"
                             +"4. Buscar Cliente\n"
-                            +"5. Salir\n"
+                            +"5. Depositar Dinero\n"
+                            +"6. Salir\n"
                             +"ELIJA UNA OPCION"));
             switch (opcion){
                 case 1:
@@ -31,12 +32,15 @@ public class Menu {
                     gestionCuenta.buscarCliente();
                     break;
                 case 5:
-                    opcion=5;
+                    gestionCuenta.depositarDinero();
+                    break;
+                case 6:
+                    opcion=6;
                     break;
                 default:
                     System.out.println("opción incorrecta");
             }
-        }while (opcion!=5);
+        }while (opcion!=6);
         System.exit(0);
     }
 }

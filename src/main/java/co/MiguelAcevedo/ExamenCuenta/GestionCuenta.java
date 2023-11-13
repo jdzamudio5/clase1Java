@@ -68,6 +68,18 @@ public class GestionCuenta {
                 JOptionPane.showMessageDialog(null,"cliente no encontrado");
             }
         }
+        public void depositarDinero() {
+            int numCuenta = Integer.parseInt(JOptionPane.showInputDialog("ingrese el numero de cuenta:"));
+            cuenta = banco.buscarCuentas(Integer.parseInt(String.valueOf(numCuenta)));
+            for (int i=0;i < cuentas.size();i++){
+            if (numCuenta==cuentas.get(i).getNumCuenta()) {
+                double deposito = Double.parseDouble(JOptionPane.showInputDialog(null,"Digite el valor a depositar: "));
+                double nuevoSaldo = cuenta.getSaldoCuenta()+deposito;
+                cuenta.setSaldoCuenta(nuevoSaldo);
+                JOptionPane.showMessageDialog(null,"El deposito a la cuenta "+ cuenta.getNumCuenta()+" ha sido realizado con éxito. El nuevo saldo es: "+ cuenta.getSaldoCuenta());
+            } else {
+                JOptionPane.showMessageDialog(null,"cuenta no encontrada.");
+            }
+        }
     }
-
-
+}
