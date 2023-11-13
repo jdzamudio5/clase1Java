@@ -7,48 +7,22 @@ public class Cuenta extends Banco{
     private String fechaApertura;
     private int saldo;
     private int cedulaCliente;
-    public static void consultarSaldo(){
-    }
-    public static void retirarDinero(){
+    public static void consultarSaldo(){}
+    public static void retirarDinero(){}
+    public int getCuenta() {return cuenta;}
+    public void setCuenta(int cuenta) {this.cuenta = cuenta;}
+    public String getTipo() {return tipo;}
+    public void setTipo(String tipo) {this.tipo = tipo;}
+    public String getFechaApertura() {return fechaApertura;}
+    public void setFechaApertura(String fechaApertura) {this.fechaApertura = fechaApertura;}
+    public int getSaldo() {return saldo;}
+    public void setSaldo(int saldo) {this.saldo = saldo;}
+    public int getCedulaCliente() {return cedulaCliente;}
+    public void setCedulaCliente(int cedulaCliente) {this.cedulaCliente = cedulaCliente;}
+    //Constructores
 
-    }
-    //aqui van los getter y setter
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public String getFechaApertura() {
-        return fechaApertura;
-    }
-
-    public void setFechaApertura(String fechaApertura) {
-        this.fechaApertura = fechaApertura;
-    }
-
-    public int getSaldo() {
-        return saldo;
-    }
-
-    public void setSaldo(int saldo) {
-        this.saldo = saldo;
-    }
-
-    public int getCedulaCliente() {
-        return cedulaCliente;
-    }
-
-    public void setCedulaCliente(int cedulaCliente) {
-        this.cedulaCliente = cedulaCliente;
-    }
-
-    public Cuenta(String nombre, String direccion, int telefono, String correoInstitucional, Cuenta cuenta, int cuenta1, String tipo, String fechaApertura, int saldo, int cedulaCliente) {
-        super(nombre, direccion, telefono, correoInstitucional, cuenta);
-        this.cuenta = cuenta1;
+    public Cuenta(int cuenta, String tipo, String fechaApertura, int saldo, int cedulaCliente) {
+        this.cuenta = cuenta;
         this.tipo = tipo;
         this.fechaApertura = fechaApertura;
         this.saldo = saldo;

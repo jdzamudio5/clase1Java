@@ -1,34 +1,22 @@
 package Examen;
 
 public class Usuario extends Persona{
-    String usuario;
-    String clave;
-    boolean cliente;
-    public static void ingresarSistema(){
-    }
-    //aqui van los getter y setter
-    public String getUsuario() {
-        return usuario;
-    }
+    private String usuario;
+    private String clave;
+    private boolean cliente;
+    public static void ingresarSistema(){ }
+    public String getUsuario() {return usuario;}
+    public void setUsuario(String usuario) {this.usuario = usuario;}
+    public String getClave() {return clave;}
+    public void setClave(String clave) {this.clave = clave;}
+    @Override
+    public boolean isCliente() {return cliente;}
+    @Override
+    public void setCliente(boolean cliente) {this.cliente = cliente;}
 
-    public boolean isCliente() {
-        return cliente;
-    }
-    public void setCliente(boolean cliente) {
-        this.cliente = cliente;
-    }
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
-    }
-    public String getClave() {
-        return clave;
-    }
-    public void setClave(String clave) {
-        this.clave = clave;
-    }
+    //Constructores
 
-    public Usuario(String nombre, byte edad, char genero, String direccion, String usuario, String clave, boolean cliente) {
-        super(nombre, edad, genero, direccion);
+    public Usuario(String usuario, String clave, boolean cliente) {
         this.usuario = usuario;
         this.clave = clave;
         this.cliente = cliente;
