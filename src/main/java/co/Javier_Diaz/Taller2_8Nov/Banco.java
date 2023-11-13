@@ -13,14 +13,27 @@ public class Banco{
         Datos = datos;
     }
 
-    public void requerirDatosNuevacuenta(){
+        public void requerirDatosNuevacuenta(){
 
         String Numero_documento=(JOptionPane.showInputDialog("Identificacion:"));
-        String Nombres=(JOptionPane.showInputDialog("Nombres:"));
-        String Apellidos=(JOptionPane.showInputDialog("Apellidos:"));
-        String Usuarios=(JOptionPane.showInputDialog("Usuario:"));
-        String Contrasenas=(JOptionPane.showInputDialog("contrasena:"));
-
+        boolean ValidacionClinete=false;
+        String Nombres = null,Apellidos= null, Usuarios= null, Contrasenas= null;
+            for (int i = 0; i < Datos.size(); i++) {
+                if (Numero_documento.equals(Datos.get(i).getNumero_Documento())){
+                    JOptionPane.showMessageDialog(null, "Fue Detectado el cliente Identificado con Numero de Documento "+Datos.get(i).getNumero_Documento()+ " con nombre "+Datos.get(i).getNombres()+" "+Datos.get(i).getApellidos());
+                    Nombres=Datos.get(i).getNombres();
+                    Apellidos=Datos.get(i).getApellidos();
+                    Usuarios=Datos.get(i).getUsuario();
+                    Contrasenas=Datos.get(i).getContrasena();
+                    ValidacionClinete=true;
+                }
+            }
+            if (!ValidacionClinete) {
+                Nombres=(JOptionPane.showInputDialog("Nombres:"));
+                Apellidos=(JOptionPane.showInputDialog("Apellidos:"));
+                Usuarios=(JOptionPane.showInputDialog("Usuario:"));
+                Contrasenas=(JOptionPane.showInputDialog("contrasena:"));
+            }
         //Creacion del Numero Aleatorio
         Random random = new Random();
         int tempCuenta= random.nextInt(1000);
@@ -66,8 +79,7 @@ public class Banco{
         Cliente cliente = new Cliente(Nombres,Apellidos,Numero_documento,cuenta,Usuarios,Contrasenas,true);
         Datos.add(cliente);
     }
-
-    public void verClientes(){
+        public void verClientes(){
 
         // Crear un StringBuilder para almacenar las iteraciones
         StringBuilder mensajeBuilder = new StringBuilder();
@@ -76,13 +88,14 @@ public class Banco{
             mensajeBuilder.append("Nombres: ").append(Datos.get(i).getNombres()).append("\n");
             mensajeBuilder.append("Apellidos: ").append(Datos.get(i).getApellidos()).append("\n");
             mensajeBuilder.append("Numero de Documento: ").append(Datos.get(i).getNumero_Documento()).append("\n");
-            mensajeBuilder.append("Estado Cliente: ").append(Datos.get(i).getEstado_Cliente()).append("\n");
+            mensajeBuilder.append("Estado Cliente: ").append((Datos.get(i).getEstado_Cliente()==true)?"Activo":"Desactiva").append("\n");
             mensajeBuilder.append("Usuario: ").append(Datos.get(i).getUsuario()).append("\n");
             mensajeBuilder.append("Contrasena: ").append(Datos.get(i).getContrasena()).append("\n");
             mensajeBuilder.append("Numero de Cuenta: ").append(Datos.get(i).getCuenta().getNumero_Cuenta()).append("\n");
-            mensajeBuilder.append("Estado de Cuenta: ").append(Datos.get(i).getCuenta().getEstadoCuenta()).append("\n");
+            mensajeBuilder.append("Estado de Cuenta: ").append((Datos.get(i).getCuenta().getEstadoCuenta()==true)?"Activo":"Desactiva").append("\n");
             mensajeBuilder.append("Saldo: ").append(Datos.get(i).getCuenta().getSaldo()).append("\n");
             mensajeBuilder.append("-------------------------------------------------------------------------------------\n\n");
+
         }
 
         // Obtener el String final
@@ -90,7 +103,7 @@ public class Banco{
 
         JOptionPane.showMessageDialog(null, mensajeFinal);
     }
-    public void Deposito(){
+        public void Deposito(){
         int Numero_Cuenta = -1;
         String Numero_identificacion="Null";
 
@@ -125,7 +138,7 @@ public class Banco{
                     ArrayList<Integer> CuentaIdentificacion = new ArrayList<>();
 
                     for (int i = 0; i < Datos.size(); i++) {
-                        if (Numero_identificacion.equals(Datos.get(i).getNumero_Documento())){
+                        if (Numero_identificacion.equals(Datos.get(i).getNumero_Documento()) && Datos.get(i).getCuenta().getEstadoCuenta()==true){
                             CuentaIdentificacion.add(Datos.get(i).getCuenta().getNumero_Cuenta());
                         }
                     }
@@ -159,7 +172,7 @@ public class Banco{
                 JOptionPane.showMessageDialog(null, "Opcion no valida");
         }
     }
-    public void Retiro(){
+        public void Retiro(){
             int Numero_Cuenta = -1;
             String Numero_identificacion="Null";
 
@@ -181,9 +194,14 @@ public class Banco{
                     for (int i = 0; i < Datos.size(); i++) {
                         if (Numero_Cuenta == Datos.get(i).getCuenta().getNumero_Cuenta()) {
                             double Retiro = Double.parseDouble((JOptionPane.showInputDialog("Ingrese Monto a Retirar:")));
-                            double NuevoSaldo=Datos.get(i).getCuenta().getSaldo() - Retiro;
-                            Datos.get(i).getCuenta().setSaldo(NuevoSaldo);
-                            JOptionPane.showMessageDialog(null, "El nuevo Saldo para cuenta: "+Datos.get(i).getCuenta().getNumero_Cuenta()+" es de "+NuevoSaldo);
+                            if (Datos.get(i).getCuenta().getSaldo()>=Retiro){
+                                double NuevoSaldo=Datos.get(i).getCuenta().getSaldo() - Retiro;
+                                Datos.get(i).getCuenta().setSaldo(NuevoSaldo);
+                                JOptionPane.showMessageDialog(null, "El nuevo Saldo para cuenta: "+Datos.get(i).getCuenta().getNumero_Cuenta()+" es de "+NuevoSaldo);
+                            }
+                            else{
+                                JOptionPane.showMessageDialog(null,"Saldo Insuficiente, El saldo actual es de "+Datos.get(i).getCuenta().getSaldo());
+                            }
                         }
                     }
                     break;
@@ -193,7 +211,7 @@ public class Banco{
                     ArrayList<Integer> CuentaIdentificacion = new ArrayList<>();
 
                     for (int i = 0; i < Datos.size(); i++) {
-                        if (Numero_identificacion.equals(Datos.get(i).getNumero_Documento())){
+                        if (Numero_identificacion.equals(Datos.get(i).getNumero_Documento()) && Datos.get(i).getCuenta().getEstadoCuenta()==true){
                             CuentaIdentificacion.add(Datos.get(i).getCuenta().getNumero_Cuenta());
                         }
                     }
@@ -215,9 +233,14 @@ public class Banco{
                     for (int i = 0; i < Datos.size(); i++) {
                         if (arrayCuentas[Cuenta_opcion_Retiro] == Datos.get(i).getCuenta().getNumero_Cuenta()) {
                             double Retiro = Double.parseDouble((JOptionPane.showInputDialog("Ingrese Monto a Retirar: ")));
-                            double NuevoSaldo=Datos.get(i).getCuenta().getSaldo()-Retiro;
-                            Datos.get(i).getCuenta().setSaldo(NuevoSaldo);
-                            JOptionPane.showMessageDialog(null, "El nuevo Saldo para cuenta: "+Datos.get(i).getCuenta().getNumero_Cuenta()+" es de "+NuevoSaldo);
+                            if (Datos.get(i).getCuenta().getSaldo()>=Retiro){
+                                double NuevoSaldo=Datos.get(i).getCuenta().getSaldo() - Retiro;
+                                Datos.get(i).getCuenta().setSaldo(NuevoSaldo);
+                                JOptionPane.showMessageDialog(null, "El nuevo Saldo para cuenta: "+Datos.get(i).getCuenta().getNumero_Cuenta()+" es de "+NuevoSaldo);
+                            }
+                            else{
+                                JOptionPane.showMessageDialog(null,"Saldo Insuficiente, El saldo actual es de "+Datos.get(i).getCuenta().getSaldo());
+                            }
                         }
                     }
 
@@ -227,7 +250,6 @@ public class Banco{
                     JOptionPane.showMessageDialog(null, "Opcion no valida");
             }
         }
-
         public void ActulizarCliente(){
            String TempNumero_Identificacion= JOptionPane.showInputDialog("Numero De Identificacion:");
             boolean ValidacionClinete=false;
@@ -261,8 +283,7 @@ public class Banco{
             }
 
         }
-
-    public void ElimiarCuenta(){
+        public void ElimiarCuenta(){
         int Numero_Cuenta = -1;
         String Numero_identificacion="Null";
 
@@ -283,8 +304,13 @@ public class Banco{
                 Numero_Cuenta= Integer.parseInt((JOptionPane.showInputDialog("Numero De Cuenta:")));
                 for (int i = 0; i < Datos.size(); i++) {
                     if (Numero_Cuenta == Datos.get(i).getCuenta().getNumero_Cuenta()) {
-                        Datos.get(i).getCuenta().setEstadoCuenta(false);
-                        JOptionPane.showMessageDialog(null, "El nuevo estado de la cuenta: "+Datos.get(i).getCuenta().getNumero_Cuenta()+" es Desactivada");
+                        if(Datos.get(i).getCuenta().getSaldo()==0){
+                            Datos.get(i).getCuenta().setEstadoCuenta(false);
+                            JOptionPane.showMessageDialog(null, "El nuevo estado de la cuenta: "+Datos.get(i).getCuenta().getNumero_Cuenta()+" es Desactivada");
+                        }
+                        else{
+                            JOptionPane.showMessageDialog(null,"Esta Cuenta aun tiene saldo, Por favor realizar el Retiro Primero");
+                        }
                     }
                 }
                 break;
@@ -294,7 +320,7 @@ public class Banco{
                 ArrayList<Integer> CuentaIdentificacion = new ArrayList<>();
 
                 for (int i = 0; i < Datos.size(); i++) {
-                    if (Numero_identificacion.equals(Datos.get(i).getNumero_Documento())){
+                    if (Numero_identificacion.equals(Datos.get(i).getNumero_Documento()) && Datos.get(i).getCuenta().getEstadoCuenta()==true){
                         CuentaIdentificacion.add(Datos.get(i).getCuenta().getNumero_Cuenta());
                     }
                 }
@@ -315,11 +341,15 @@ public class Banco{
 
                 for (int i = 0; i < Datos.size(); i++) {
                     if (arrayCuentas[Cuenta_opcion_Retiro] == Datos.get(i).getCuenta().getNumero_Cuenta()) {
-                        Datos.get(i).getCuenta().setEstadoCuenta(false);
-                        JOptionPane.showMessageDialog(null, "El nuevo estado de la cuenta: "+Datos.get(i).getCuenta().getNumero_Cuenta()+" es Desactivada");
+                        if(Datos.get(i).getCuenta().getSaldo()==0){
+                            Datos.get(i).getCuenta().setEstadoCuenta(false);
+                            JOptionPane.showMessageDialog(null, "El nuevo estado de la cuenta: "+Datos.get(i).getCuenta().getNumero_Cuenta()+" es Desactivada");
+                        }
+                        else{
+                            JOptionPane.showMessageDialog(null,"Esta Cuenta aun tiene saldo, Por favor realizar el Retiro Primero");
+                        }
                     }
                 }
-
                 break;
 
             default:
@@ -328,11 +358,24 @@ public class Banco{
     }
         public void ElimiarCliente(){
             String Numero_identificacion=(JOptionPane.showInputDialog("Numero De identificacion:"));
-            for (int i = 0; i < Datos.size(); i++) {
-                if (Numero_identificacion.equals(Datos.get(i).getNumero_Documento())){
-                    Datos.get(i).setEstado_Cliente(false);
+            boolean Permiso=true;
+            for (int i = 0; i < Datos.size(); i++){
+                if (Datos.get(i).getCuenta().getEstadoCuenta()==true && Numero_identificacion.equals(Datos.get(i).getNumero_Documento())){
+                    Permiso=false;
                 }
             }
+            if (Permiso){
+                for (int i = 0; i < Datos.size(); i++) {
+                    if (Numero_identificacion.equals(Datos.get(i).getNumero_Documento())){
+                        Datos.get(i).setEstado_Cliente(false);
+                        JOptionPane.showMessageDialog(null, "El cliente Identificado con Numero de Documento "+Datos.get(i).getNumero_Documento()+ " con nombre "+Datos.get(i).getNombres()+" "+Datos.get(i).getApellidos()+" Fue Deshabilitado del sistema");
+                    }
+                }
+            }
+            else{
+                JOptionPane.showMessageDialog(null,"El Cliente Tiene cuentas Activas");
+            }
+
         }
 }
 
