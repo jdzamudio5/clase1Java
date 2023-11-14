@@ -4,14 +4,13 @@ import java.util.Random;
 import Examen.Cuenta;
 
 public class Banco {
-    private String nombre;
-    private String direccion;
-    private int telefono;
-    private String correoInstitucional;
+    private String nombre="Banco de Occidente";
+    private String direccion="Carrera 13 # 26A - 47";
+    private int telefono=55555;
+    private String correoInstitucional="correo@bancodeoccidente.com.co";
     public static void consultarCliente(){}
     public static void asociarCliente(){}
     public static void actualizarInformacionCliente(){}
-    public static void crearCuenta(){}
     public String getNombre() {return nombre;}
     public void setNombre(String nombre) {this.nombre = nombre;}
     public String getDireccion() {return direccion;}

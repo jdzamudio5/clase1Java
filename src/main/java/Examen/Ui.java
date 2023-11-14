@@ -2,7 +2,8 @@ package Examen;
 
 import javax.swing.*;
 
-import static Examen.Banco.crearCuenta;
+import static Examen.Banco.*;
+import static Examen.Cuenta.crearCuenta;
 import static Examen.Persona.*;
 
 public class Ui {
@@ -27,7 +28,6 @@ public class Ui {
                     salirCliente=true;
                 } else if (hayClientes!=false) {
                     System.out.println("Ingreso al modulo Cliente");
-
                     do {
                         String[] opcionesCliente = {"Ver Saldo Cta", "Depositar dinero", "Retirar Dinero", "Volver"};
                         int seleccioncliente = JOptionPane.showOptionDialog(
@@ -79,6 +79,8 @@ public class Ui {
                             break;
                         case 1:
                             System.out.println("Abrir cuenta");
+                            int cedula = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la cedula del cliente:"));
+                            crearCuenta(cedula);
                             break;
                         case 2:
                             System.out.println("Consultar Cliente");
