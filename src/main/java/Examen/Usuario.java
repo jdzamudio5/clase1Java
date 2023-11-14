@@ -16,9 +16,10 @@ public class Usuario extends Persona{
 
     //Constructores
 
-    public Usuario(String usuario, String clave, boolean cliente) {
+    public Usuario(double cedula, String nombre, String apellido, int edad, String genero, String direccion, boolean cliente, String usuario, String clave, boolean cliente1) {
+        super(cedula, nombre, apellido, edad, genero, direccion, cliente);
         this.usuario = usuario;
         this.clave = clave;
-        this.cliente = cliente;
+        this.cliente = cliente1;
     }
 }

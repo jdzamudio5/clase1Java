@@ -21,7 +21,9 @@ public class Cuenta extends Banco{
     public void setCedulaCliente(int cedulaCliente) {this.cedulaCliente = cedulaCliente;}
     //Constructores
 
-    public Cuenta(int cuenta, String tipo, String fechaApertura, int saldo, int cedulaCliente) {
+
+    public Cuenta(String nombre, String direccion, int telefono, String correoInstitucional, int cuenta, String tipo, String fechaApertura, int saldo, int cedulaCliente) {
+        super(nombre, direccion, telefono, correoInstitucional);
         this.cuenta = cuenta;
         this.tipo = tipo;
         this.fechaApertura = fechaApertura;

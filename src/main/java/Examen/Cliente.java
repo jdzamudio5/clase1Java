@@ -9,8 +9,9 @@ public class Cliente extends Persona {
     public void setNumeroCliente(int numeroCliente) {this.numeroCliente = numeroCliente;}
     //Constructores
 
-    public Cliente(String nombre, String apellido, byte edad, char genero, String direccion, boolean cliente, int numeroCliente) {
-        super(nombre, apellido, edad, genero, direccion, cliente);
+
+    public Cliente(double cedula, String nombre, String apellido, int edad, String genero, String direccion, boolean cliente, int numeroCliente) {
+        super(cedula, nombre, apellido, edad, genero, direccion, cliente);
         this.numeroCliente = numeroCliente;
     }
 }
