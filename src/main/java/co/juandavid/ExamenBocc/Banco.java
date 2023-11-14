@@ -11,14 +11,7 @@ public class Banco {
 
     }
     public static void addData(){
-        Cliente cliente=new Cliente();
-        cliente.setNombre("Juan");
-        cliente.setApellido("Zamudio");
-        cliente.setId("1018429155");
-        cliente.setEmail("jdzamudio5@gmail.com");
-        cliente.setPass1("1234");
-        cliente.setPass2("1234");
-    }
+       }
     public void menu_ingreso(){
         Banco banco=new Banco();
         while (true) {
@@ -36,7 +29,7 @@ public class Banco {
                 case 1:
                     //double deposito = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese la cantidad a depositar: "));
 
-                    banco.ingreso();
+                    //banco.ingreso();
                     //cuenta.depositar(deposito);
                     break;
                 case 2:
@@ -48,12 +41,12 @@ public class Banco {
                     //cuenta.retirar(retiro);
                     break;
                 default:
-                    JOptionPane.showMessageDialog(null, "Opción inválida. Por favor, seleccione una opción válida.");
-                    break;
+                    //JOptionPane.showMessageDialog(null, "Opción inválida. Por favor, seleccione una opción válida.");
+                    //break;
             }
         }
     }
-    public void menu_ingreso2(){
+    /*public void menu_ingreso2(){
         int opcion=0;
         while (true){
             Cuenta cuenta=new Cuenta();
@@ -91,25 +84,30 @@ public class Banco {
 
         }
 
-    }
-    public void ingreso(){
+    }*/
+    /*public void ingreso(){
         String email=JOptionPane.showInputDialog(null,"Ingrese su Email");
         String pass=JOptionPane.showInputDialog(null,"Ingrese su Password");
+        boolean credencialesCorrectas = false;
         for (Cliente cliente: clientes
              ) {
+            System.out.println(cliente);
             if (cliente.getEmail().equals(email) && cliente.getPass1().equals(pass)) {
                 JOptionPane.showMessageDialog(null,"Bienvenido "+cliente.getNombre()+" "+cliente.getApellido());
-                menu_ingreso2();
-                return;
-                
-            }else {
-                JOptionPane.showMessageDialog(null,"Cuenta o contraseña incorrecto");
-                menu_ingreso();
+                credencialesCorrectas = true;
+                break;
+
+
             }
             
+        }if (!credencialesCorrectas) {
+            JOptionPane.showMessageDialog(null, "Cuenta o contraseña incorrectos");
+            menu_ingreso();
+        } else {
+            menu_ingreso2();
         }
 
-    }
+    }*/
     public void registro(){
         String nombre= JOptionPane.showInputDialog(null,"Digite su nombre");
         String apellido= JOptionPane.showInputDialog(null,"Digite su apellido");
@@ -118,8 +116,7 @@ public class Banco {
         String password1= JOptionPane.showInputDialog(null,"Digite su clave");
         String password2= JOptionPane.showInputDialog(null,"repita su clave");
 
-        Cliente cliente=new Cliente(nombre, apellido,cedula,correo,password1,password2);
-        clientes.add(cliente);
+
         menu_ingreso();
 
     }

@@ -1,38 +1,55 @@
 package co.juandavid.ExamenBocc;
 
-import co.juandavid.examen2.Cliente;
+import co.juandavid.ExamenBocc.Cliente;
 
 import javax.swing.*;
 
 public class Cuenta {
     private Cliente cliente;
-    public Cuenta(Cliente cliente) {
 
+    private int numCuenta;
+    private double saldoCuenta;
+
+
+
+    public Cuenta(Cliente cliente, int numCuenta, double saldoCuenta) {
+        this.cliente = cliente;
+        this.numCuenta = numCuenta;
+        this.saldoCuenta = saldoCuenta;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
 
-    public Cuenta() {
+    public int getNumCuenta() {
+        return numCuenta;
+    }
 
+    public void setNumCuenta(int numCuenta) {
+        this.numCuenta = numCuenta;
+    }
+
+    public double getSaldoCuenta() {
+        return saldoCuenta;
+    }
+
+    public void setSaldoCuenta(double saldoCuenta) {
+        this.saldoCuenta = saldoCuenta;
     }
 
     public void depositar(double depositar){
-        double saldoActual=cliente.getSaldo();
-        cliente.setSaldo(saldoActual+depositar);
-        JOptionPane.showMessageDialog(null, "Depósito realizado. Saldo actual: $" + cliente.getSaldo());
+        //JOptionPane.showMessageDialog(null, "Saldo actual: $" + cliente.getSaldo());
 
     }
     public void consultarSaldo(){
-        JOptionPane.showMessageDialog(null, "Saldo actual: $" + cliente.getSaldo());
+        //JOptionPane.showMessageDialog(null, "Saldo actual: $" + cliente.getSaldo());
     }
     public void retirar(double retiro){
-        double saldoActual=cliente.getSaldo();
-        if (saldoActual<=retiro){
-            cliente.setSaldo(saldoActual-retiro);
-            JOptionPane.showMessageDialog(null, "Retiro realizado. Saldo actual: $" + cliente.getSaldo());
-        }else {
-            JOptionPane.showMessageDialog(null, "Saldo insuficiente para realizar el retiro.");
-        }
-
 
     }
 
