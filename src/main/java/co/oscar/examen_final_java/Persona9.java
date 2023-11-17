@@ -1,24 +1,15 @@
 package co.oscar.examen_final_java;
 
 public class Persona9 {
-    private boolean cliente;
+    /*private boolean cliente;*/
     private String nombre;
     private String apellido;
     private String identificacion;
 
-    public Persona9(boolean cliente, String nombre, String apellido, String identificacion) {
-        this.cliente = cliente;
+    public Persona9(String nombre, String apellido, String identificacion) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.identificacion = identificacion;
-    }
-
-    public boolean isCliente() {
-        return cliente;
-    }
-
-    public void setCliente(boolean cliente) {
-        this.cliente = cliente;
     }
 
     public String getNombre() {

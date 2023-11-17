@@ -2,46 +2,78 @@ package co.oscar.examen_final_java;
 
 import javax.swing.*;
 
-public class Cuenta9 extends Banco9{
+public class Cuenta9 {
 
     private double saldo;
-    private int numero_cuenta;
-    private String tipo_cuenta;
+    private int numeroCuenta;
+    private String tipoCuenta;
+    private String clienteId; // Campo adicional para asociar la cuenta con un cliente
 
-    public Cuenta9(double saldo, int numero_cuenta, String tipo_cuenta) {
-        this.saldo = saldo;
-        this.numero_cuenta = numero_cuenta;
-        this.tipo_cuenta = tipo_cuenta;
+    public Cuenta9(double saldoInicial, String tipoCuenta, String clienteId) {
+        this.clienteId = clienteId;
+        if (saldoInicial < 50000) {
+            JOptionPane.showMessageDialog(null,
+                    "El Monto mínimo para abrir una cuenta es de 50.000. No se pudo crear la cuenta.");
+            return;
+        }
+        this.saldo = saldoInicial;
+        this.tipoCuenta = tipoCuenta;
+        // La generación del número de cuenta se maneja en Banco9
     }
 
-    public Cuenta9() {
+    public void saldo() {
+        JOptionPane.showMessageDialog(null,
+                "Total saldo: " + this.saldo);
     }
 
-    public Cuenta9(Object o, int numeroAleatorio) {
+    public void consignar(double monto) {
+        this.saldo += monto;
+        JOptionPane.showMessageDialog(null,
+                "Su consignación fue exitosa. Su nuevo saldo es: " + this.saldo);
     }
 
+    public void retirar(double monto) {
+        if (monto > this.saldo) {
+            JOptionPane.showMessageDialog(null,
+                    "Saldo Insuficiente");
+        } else {
+            this.saldo -= monto;
+            JOptionPane.showMessageDialog(null,
+                    "Retiro exitoso" + "\n Nuevo saldo: " + this.saldo);
+        }
+    }
+
+    // Getters
     public double getSaldo() {
-        return saldo;
+        return this.saldo;
     }
 
+    public int getNumeroCuenta() {
+        return this.numeroCuenta;
+    }
+
+    public String getTipoCuenta() {
+        return this.tipoCuenta;
+    }
+
+    public String getClienteId() {
+        return this.clienteId;
+    }
+
+    // Setters
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 
-    public int getNumero_cuenta() {
-        return numero_cuenta;
+    public void setNumeroCuenta(int numeroCuenta) {
+        this.numeroCuenta = numeroCuenta;
     }
 
-    public void setNumero_cuenta(int numero_cuenta) {
-        this.numero_cuenta = numero_cuenta;
+    public void setTipoCuenta(String tipoCuenta) {
+        this.tipoCuenta = tipoCuenta;
     }
 
-    public String getTipo_cuenta() {
-        return tipo_cuenta;
+    public void setClienteId(String clienteId) {
+        this.clienteId = clienteId;
     }
-
-    public void setTipo_cuenta(String tipo_cuenta) {
-        this.tipo_cuenta = tipo_cuenta;
-    }
-
 }

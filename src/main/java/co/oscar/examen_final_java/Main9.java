@@ -4,15 +4,13 @@ import javax.swing.*;
 
 public class Main9 {
     public static void main(String[] args) {
-        Banco9.Banco banco = new Banco9.Banco();
-
         int opcion;
         do {
-            String[] opciones = {"Salir", "Consultar Cliente", "Asociar cliente", "Actualizar cliente", "Ver todos los clientes"};
+            String[] opciones = {"Salir", "Gestionar Clientes", "Depositar", "Retirar", "Ver Saldo", "Ver todos los clientes"};
             opcion = JOptionPane.showOptionDialog(
                     null,
-                    "Seleccione la opcion:",
-                    "Banco de Occidente",
+                    "Selecciona una opción:",
+                    "Menú Banco de Occidente",
                     JOptionPane.DEFAULT_OPTION,
                     JOptionPane.QUESTION_MESSAGE,
                     null,
@@ -20,24 +18,82 @@ public class Main9 {
                     opciones[0]);
 
             switch (opcion) {
-                case 1:
-                    Banco9.Banco.consultarCliente();
+                case 1: // Gestionar Clientes
+                    gestionarClientes();
                     break;
-                case 2:
-                    Banco9.Banco.asociarCliente();
+                case 2: // Depositar
+                    realizarOperacion("depositar");
                     break;
-                case 3:
-                    Banco9.Banco.actualizarInformacionCliente();
+                case 3: // Retirar
+                    realizarOperacion("retirar");
                     break;
-
-                case 0:
+                case 4: // Ver Saldo
+                    verSaldo();
+                    break;
+                case 5: // Ver todos los clientes
+                    Banco9.mostrarClientes();
+                    break;
+                case 0: // Salir
                     JOptionPane.showMessageDialog(null, "Saliendo...");
                     break;
                 default:
-                    JOptionPane.showMessageDialog(null, "Opcion no valida");
+                    JOptionPane.showMessageDialog(null, "Opción no válida");
             }
-        } while (opcion != 0); // La opción 0 es Salir
+        } while (opcion != 0);
+    }
+
+    private static void gestionarClientes() {
+        String[] opcionesCliente = {"Crear Cliente", "Actualizar Información", "Eliminar Cliente"};
+        int opcionCliente = JOptionPane.showOptionDialog(
+                null,
+                "Gestión de Clientes",
+                "Menú Clientes",
+                JOptionPane.DEFAULT_OPTION,
+                JOptionPane.QUESTION_MESSAGE,
+                null,
+                opcionesCliente,
+                opcionesCliente[0]);
+
+        switch (opcionCliente) {
+            case 0: // Crear Cliente
+                Cliente9 cliente = Banco9.crearCliente();
+                if (cliente != null) {
+                    int respuesta = JOptionPane.showConfirmDialog(null,
+                            "Cliente creado. ¿Desea crear una cuenta para este cliente?",
+                            "Crear Cuenta",
+                            JOptionPane.YES_NO_OPTION);
+                    if (respuesta == JOptionPane.YES_OPTION) {
+                        Banco9.crearCuenta(cliente);
+                    }
+                }
+                break;
+            case 1: // Actualizar Información
+                Banco9.actualizarInformacion();
+                break;
+            case 2: // Eliminar Cliente
+                String identificacion = JOptionPane.showInputDialog("Ingrese la identificación del cliente a eliminar:");
+                boolean eliminado = Banco9.eliminarCliente(identificacion);
+                if (eliminado) {
+                    JOptionPane.showMessageDialog(null, "Cliente eliminado exitosamente.");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Cliente no encontrado o no se pudo eliminar.");
+                }
+                break;
+        }
+    }
+
+    private static void realizarOperacion(String operacion) {
+        int numeroCuenta = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de cuenta:"));
+
+        if (operacion.equals("depositar")) {
+            Banco9.consignar(numeroCuenta);
+        } else if (operacion.equals("retirar")) {
+            Banco9.retirar(numeroCuenta);
+        }
+    }
+
+    private static void verSaldo() {
+        int numeroCuenta = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de cuenta:"));
+        Banco9.saldo(numeroCuenta);
     }
 }
-
-
