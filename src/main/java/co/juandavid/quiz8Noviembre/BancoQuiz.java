@@ -67,11 +67,11 @@ public class BancoQuiz {
         }return null;
 
     }
-    public void crearCuenta(ClienteQuiz identificacion){
+    /*public void crearCuenta(ClienteQuiz identificacion){
         getCuentasClientes().add(identificacion);
 
 
-    }
+    }*/
 
 
 
