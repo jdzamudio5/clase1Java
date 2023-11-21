@@ -1,12 +1,19 @@
-package co.juandavid.ExamenBocc;
+package co.juandavid.examenBocc;
 
 public class Personas {
-    private String nombre, apellido, identicacion;
 
-    public Personas(String nombre, String apellido, String identicacion) {
+    private String nombre;
+    private String apellido;
+    private int numDoc;
+
+
+    // Constructor
+
+
+    public Personas(String nombre, String apellido, int numDoc) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.identicacion = identicacion;
+        this.numDoc = numDoc;
     }
 
     public String getNombre() {
@@ -25,11 +32,11 @@ public class Personas {
         this.apellido = apellido;
     }
 
-    public String getIdenticacion() {
-        return identicacion;
+    public int getNumDoc() {
+        return numDoc;
     }
 
-    public void setIdenticacion(String identicacion) {
-        this.identicacion = identicacion;
+    public void setNumDoc(int numDoc) {
+        this.numDoc = numDoc;
     }
 }

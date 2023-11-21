@@ -10,6 +10,7 @@ public class Producto {
     }
 
     public void setCantidad(int cantidad) {
+
         this.cantidad = cantidad;
     }
 
@@ -22,6 +23,7 @@ public class Producto {
     }
 
     public String getDescProducto() {
+
         return descProducto;
     }
 }

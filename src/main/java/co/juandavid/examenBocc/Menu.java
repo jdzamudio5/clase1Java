@@ -1,10 +1,10 @@
-package co.juandavid.ExamenBocc;
+package co.juandavid.examenBocc;
 
 import javax.swing.*;
 
 public class Menu {
     public void menu_ingreso(){
-        Banco banco=new Banco();
+        //Banco banco=new Banco();
         while (true) {
             int opcion=0;
             try {
@@ -25,7 +25,7 @@ public class Menu {
                     break;
                 case 2:
                     //cuenta.verSaldo();
-                    banco.registro();
+                    //banco.registro();
                     break;
                 case 3:
                     System.exit(0);
