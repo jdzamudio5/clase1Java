@@ -2,7 +2,7 @@ package co.juandavid.quiz8Noviembre;
 
 
 
-import co.juandavid.examenBocc.Cliente;
+//import co.juandavid.examenBocc.Cliente;
 
 import javax.swing.*;
 
@@ -67,11 +67,17 @@ public class BancoQuiz {
         }return null;
 
     }
-    /*public void crearCuenta(ClienteQuiz identificacion){
-        getCuentasClientes().add(identificacion);
+    public int buscarCuenta(ClienteQuiz clienteQuiz){
+        for (CuentaQuiz cuentaQuiz: getCuentasClientes()) {
+            if (clienteQuiz.getIdentificacion()==cuentaQuiz.getClienteQuiz().getIdentificacion()){
+                return cuentaQuiz.getNumCuenta();
 
+            }
 
-    }*/
+        }return null;
+
+    }
+
 
 
 
@@ -79,21 +85,27 @@ public class BancoQuiz {
         int identificacion=Integer.parseInt(JOptionPane.showInputDialog(null,"digite numero" +
                 "de identificación"));
         clienteQuiz=buscarCliente(identificacion);
-        int aleatorio=(int)(Math.random())*(1000-9999);
+        int aleatorio=(int)(Math.random()*(99999-10000+1)+10000);;
         if (clienteQuiz != null) {
             int numCuenta=aleatorio;
             double saldoCuenta=Double.parseDouble(JOptionPane.showInputDialog(null,"" +
                     "Importante: el saldo minimo para abrir la cuenta es de $50.000.\n" +
                     "Por favor ingrese el saldo para abrir la cuenta"));
             if (saldoCuenta >= 50000) {
-                CuentaQuiz cuentaQuiz1=new CuentaQuiz(numCuenta,saldoCuenta);
-                getCuentasClientes().add(0,cuentaQuiz1);
+                CuentaQuiz cuentaQuiz=new CuentaQuiz(numCuenta,saldoCuenta,clienteQuiz);
+                getCuentasClientes().add(0,cuentaQuiz);
+                JOptionPane.showMessageDialog(null,
+                        "cliente Nombre: "+ clienteQuiz.getNombre()+" "+ clienteQuiz.getApellido()
+                                +"\n identificación "+clienteQuiz.getIdentificacion()+"Cuenta"+ cuentaQuiz.getNumCuenta()+
+                                "saldo: "+cuentaQuiz.getSaldoCuenta());
+                System.out.println(cuentaQuiz.getCuentasClientes().get(0).getNumCuenta());
 
+            }else {
+                    JOptionPane.showMessageDialog(null, "Consigne un valor minimo de" +
+                            "$50.000");
             }
 
-            JOptionPane.showMessageDialog(null,
-                    "cliente Nombre: "+ clienteQuiz.getNombre()+" "+ clienteQuiz.getApellido()
-                            +"\n identificación "+clienteQuiz.getIdentificacion());
+
         }else {
             JOptionPane.showMessageDialog(null, "cliente no encontrado");
         }
@@ -112,5 +124,19 @@ public class BancoQuiz {
             JOptionPane.showMessageDialog(null, "cliente no encontrado");
         }
     }
+    public void consultarCuenta(){
+        int identificacion=Integer.parseInt(JOptionPane.showInputDialog(null,"digite numero" +
+                "de identificación"));
+        clienteQuiz=buscarCliente(identificacion);
+        if (clienteQuiz != null) {
 
+            JOptionPane.showMessageDialog(null,
+                    "cliente Nombre: "+ clienteQuiz.getNombre()+" "+ clienteQuiz.getApellido()
+                            +"\n identificación "+clienteQuiz.getIdentificacion());
+        }else {
+            JOptionPane.showMessageDialog(null, "cliente no encontrado");
+        }
+    }
 }
+
+

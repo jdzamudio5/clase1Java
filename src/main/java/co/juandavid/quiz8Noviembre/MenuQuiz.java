@@ -42,11 +42,13 @@ public class MenuQuiz {
                 case 4:
                     break;
                 case 5:
+                    bancoQuiz.crearCuenta();
                     break;
                 case 6:
                     bancoQuiz.buscarClientes();
                     break;
                 case 7:
+
                     break;
                 case 8:
                     break;
